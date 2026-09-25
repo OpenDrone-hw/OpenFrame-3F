@@ -49,9 +49,9 @@ Onshape assembly; materials are as set in the model.
 | Airtag/Antenna-Mount | 1 | PLA |  | 3D print |
 | VTX-Mount | 1 | PLA |  | 3D print |
 | anti-slip pad | 1 | not set in the model |  |  |
-| Base-Bot | 1 | Carbon fiber epoxy (61%) |  | CNC carbon plate |
-| Base-Top | 1 | Carbon fiber epoxy (61%) |  | CNC carbon plate |
-| Top | 1 | Carbon fiber epoxy (61%) |  | CNC carbon plate |
+| Base-Bot | 1 | Carbon fiber epoxy (61%) | 2.5 mm | CNC carbon plate |
+| Base-Top | 1 | Carbon fiber epoxy (61%) | 2.5 mm | CNC carbon plate |
+| Top | 1 | Carbon fiber epoxy (61%) | 2 mm | CNC carbon plate |
 | 20mmx4mm | 4 | Aluminum |  | CNC aluminium |
 | Standoff-L | 1 | Aluminum |  | CNC aluminium |
 | Standoff-R | 1 | Aluminum |  | CNC aluminium |

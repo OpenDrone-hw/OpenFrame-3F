@@ -10,9 +10,9 @@ Cross,cross,Carbon fiber epoxy (61%),4,1,CNC carbon plate,ACC-FRM-CROSS-3,JHH
 Airtag/Antenna-Mount,mount,PLA,,1,3D print,,RtBD
 VTX-Mount,mount,PLA,,1,3D print,,RDBH
 anti-slip pad,pad,,,1,,,RNDD
-Base-Bot,plate,Carbon fiber epoxy (61%),,1,CNC carbon plate,,JND
-Base-Top,plate,Carbon fiber epoxy (61%),,1,CNC carbon plate,,JKD
-Top,plate,Carbon fiber epoxy (61%),,1,CNC carbon plate,,JQD
+Base-Bot,plate,Carbon fiber epoxy (61%),2.5,1,CNC carbon plate,ACC-FRM-BOT-3,JND
+Base-Top,plate,Carbon fiber epoxy (61%),2.5,1,CNC carbon plate,ACC-FRM-MID-3,JKD
+Top,plate,Carbon fiber epoxy (61%),2,1,CNC carbon plate,ACC-FRM-TOP-3,JQD
 20mmx4mm,standoff,Aluminum,,4,CNC aluminium,,J/D
 Standoff-L,standoff,Aluminum,,1,CNC aluminium,,JtD
 Standoff-R,standoff,Aluminum,,1,CNC aluminium,,RABD
