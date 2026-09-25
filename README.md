@@ -73,12 +73,14 @@ Fasteners and hardware per set, from the same assembly:
 
 ## Model checks
 
-Found when this repository was set up on 2026-09-25. They stay listed until
-the model is fixed.
+The table is the output of the hardware tooling's
+`python3 hardware/onshape_model_check.py cad/onshape.json --repo .`, run
+against workspace 3" on 2026-09-25. A row stays until the model is fixed;
+rerun the tool and paste its output to refresh it.
 
 | Check | Finding |
 |---|---|
-| Unused parts | `Receiver/Antenna-Mount` and `Part 19` are in the frame Part Studio but not in the 3" assembly |
+| Unused parts | `Receiver/Antenna-Mount` and `Bumpr` are in the `frame` Part Studio but not in the assembly |
 | Materials | `anti-slip pad` has no material set in the model |
 
 ## Dimensions from the last released drawing
