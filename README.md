@@ -16,7 +16,7 @@ incutec OpenDrone line. The 3" and 5" frames are separate repositories:
 
 ```mermaid
 flowchart LR
-  O["Onshape<br/>OpenDrone-V2, workspace 3""] --> V["Named version"]
+  O["Onshape<br/>OpenDrone-V2, workspace 3 inch"] --> V["Named version"]
   V --> E["onshape_release.py"]
   E --> R["releases/rev/<br/>STEP, drawings, manifest"]
   R --> S["Suppliers"]
