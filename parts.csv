@@ -1,15 +1,15 @@
 part,type,material,thickness_mm,qty_per_set,process,sku,onshape_part
 Arm,arm,Carbon fiber epoxy (61%),4,4,CNC carbon plate,ACC-FRM-ARM-3,JHD
-Boot-FL,arm boot,PLA,,1,3D print,,RBDD
-Boot-FR,arm boot,PLA,,1,3D print,,RJDH
-Boot-RL,arm boot,PLA,,1,3D print,,RrCD
-Boot-RR,arm boot,PLA,,1,3D print,,RJDD
-Cam-Mount-L,camera mount,PLA,,1,3D print,,REDD
-Cam-Mount-R,camera mount,PLA,,1,3D print,,RIDD
+Boot-FL,arm boot,Polyurethane,,1,"3D print, TPU",,RBDD
+Boot-FR,arm boot,Polyurethane,,1,"3D print, TPU",,RJDH
+Boot-RL,arm boot,Polyurethane,,1,"3D print, TPU",,RrCD
+Boot-RR,arm boot,Polyurethane,,1,"3D print, TPU",,RJDD
+Cam-Mount-L,camera mount,Polyurethane,,1,"3D print, TPU",,REDD
+Cam-Mount-R,camera mount,Polyurethane,,1,"3D print, TPU",,RIDD
 Cross,cross,Carbon fiber epoxy (61%),4,1,CNC carbon plate,ACC-FRM-CROSS-3,JHH
-Airtag/Antenna-Mount,mount,PLA,,1,3D print,,RtBD
-VTX-Mount,mount,PLA,,1,3D print,,RDBH
-anti-slip pad,pad,,,1,,,RNDD
+Airtag/Antenna-Mount,mount,Polyurethane,,1,"3D print, TPU",,RtBD
+VTX-Mount,mount,Polyurethane,,1,"3D print, TPU",,RDBH
+anti-slip pad,pad,Silicone Rubber,,1,moulded silicone,,RNDD
 Base-Bot,plate,Carbon fiber epoxy (61%),2.5,1,CNC carbon plate,ACC-FRM-BOT-3,JND
 Base-Top,plate,Carbon fiber epoxy (61%),2.5,1,CNC carbon plate,ACC-FRM-MID-3,JKD
 Top,plate,Carbon fiber epoxy (61%),2,1,CNC carbon plate,ACC-FRM-TOP-3,JQD

@@ -34,21 +34,25 @@ flowchart LR
 ## A set
 
 17 part types, 23 pieces, 8 of them carbon. Taken from the
-Onshape assembly; materials are as set in the model.
+Onshape assembly; materials are as set in the agent branch model. The
+Onshape material library has no TPU entry, so the TPU parts carry
+`Polyurethane`; the pad carries `Silicone Rubber`.
+`Receiver/Antenna-Mount` and `Bumpr` are kept in the `frame` Part Studio but
+are not part of the set (`modelCheck.ignoreUnused` in `cad/onshape.json`).
 
 | Part | Qty | Material | Thickness | Made by |
 |---|---|---|---|---|
 | Arm | 4 | Carbon fiber epoxy (61%) | 4 mm | CNC carbon plate |
-| Boot-FL | 1 | PLA |  | 3D print |
-| Boot-FR | 1 | PLA |  | 3D print |
-| Boot-RL | 1 | PLA |  | 3D print |
-| Boot-RR | 1 | PLA |  | 3D print |
-| Cam-Mount-L | 1 | PLA |  | 3D print |
-| Cam-Mount-R | 1 | PLA |  | 3D print |
+| Boot-FL | 1 | Polyurethane |  | 3D print, TPU |
+| Boot-FR | 1 | Polyurethane |  | 3D print, TPU |
+| Boot-RL | 1 | Polyurethane |  | 3D print, TPU |
+| Boot-RR | 1 | Polyurethane |  | 3D print, TPU |
+| Cam-Mount-L | 1 | Polyurethane |  | 3D print, TPU |
+| Cam-Mount-R | 1 | Polyurethane |  | 3D print, TPU |
 | Cross | 1 | Carbon fiber epoxy (61%) | 4 mm | CNC carbon plate |
-| Airtag/Antenna-Mount | 1 | PLA |  | 3D print |
-| VTX-Mount | 1 | PLA |  | 3D print |
-| anti-slip pad | 1 | not set in the model |  |  |
+| Airtag/Antenna-Mount | 1 | Polyurethane |  | 3D print, TPU |
+| VTX-Mount | 1 | Polyurethane |  | 3D print, TPU |
+| anti-slip pad | 1 | Silicone Rubber |  | moulded silicone |
 | Base-Bot | 1 | Carbon fiber epoxy (61%) | 2.5 mm | CNC carbon plate |
 | Base-Top | 1 | Carbon fiber epoxy (61%) | 2.5 mm | CNC carbon plate |
 | Top | 1 | Carbon fiber epoxy (61%) | 2 mm | CNC carbon plate |
@@ -74,14 +78,15 @@ Fasteners and hardware per set, from the same assembly:
 ## Model checks
 
 The table is the output of the hardware tooling's
-`python3 hardware/onshape_model_check.py cad/onshape.json --repo .`, run
-against workspace 3" on 2026-09-25. A row stays until the model is fixed;
-rerun the tool and paste its output to refresh it.
+`python3 hardware/onshape_model_check.py cad/onshape.json --repo . --agent-branch`,
+run on 2026-09-25. A row stays until the model is fixed; rerun the tool and
+paste its output to refresh it.
+
+The table reflects the Onshape branch workspace `agent/model-checks-3in` (`agentBranch` in `cad/onshape.json`), pending its merge into workspace 3".
 
 | Check | Finding |
 |---|---|
-| Unused parts | `Receiver/Antenna-Mount` and `Bumpr` are in the `frame` Part Studio but not in the assembly |
-| Materials | `anti-slip pad` has no material set in the model |
+| All | No findings |
 
 ## Dimensions from the last released drawing
 
