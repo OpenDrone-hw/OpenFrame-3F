@@ -1,0 +1,174 @@
+{
+  "source": "onshape",
+  "document": {
+    "id": "78e093d02798373a79bc68d0",
+    "name": "OpenDrone-V2",
+    "owner": "Thomas Deseure",
+    "url": "https://cad.onshape.com/documents/78e093d02798373a79bc68d0/w/0fcddf153f58a0417231386c"
+  },
+  "workspace": {
+    "id": "0fcddf153f58a0417231386c",
+    "name": "3\""
+  },
+  "elements": [
+    {
+      "id": "706f33d195388d882b65aa32",
+      "name": "frame",
+      "type": "PARTSTUDIO"
+    },
+    {
+      "id": "311a9ccaf4570ac11afc63e4",
+      "name": "pressnuts",
+      "type": "PARTSTUDIO"
+    },
+    {
+      "id": "56ce93b60ab3c76a7958d3b0",
+      "name": "Softmount",
+      "type": "PARTSTUDIO"
+    },
+    {
+      "id": "fce8fc1bdf426e13532126f3",
+      "name": "OpenDrone-3",
+      "type": "ASSEMBLY"
+    },
+    {
+      "id": "248e177ed0d9d8fc9c2803c2",
+      "name": "Drawing 1",
+      "type": "DRAWING"
+    }
+  ],
+  "parts": [
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "JHD",
+      "name": "Arm",
+      "release": true
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "JHH",
+      "name": "Cross",
+      "release": true
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "JKD",
+      "name": "Base-Top",
+      "release": true
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "JND",
+      "name": "Base-Bot",
+      "release": true
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "JQD",
+      "name": "Top",
+      "release": true
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "JtD",
+      "name": "Standoff-L",
+      "release": true
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "J/D",
+      "name": "20mmx4mm",
+      "release": true
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "RABD",
+      "name": "Standoff-R",
+      "release": true
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "RDBH",
+      "name": "VTX-Mount",
+      "release": true
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "RtBD",
+      "name": "Airtag/Antenna-Mount",
+      "release": true
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "RFCD",
+      "name": "Receiver/Antenna-Mount",
+      "release": false
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "RrCD",
+      "name": "Boot-RL",
+      "release": true
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "RBDD",
+      "name": "Boot-FL",
+      "release": true
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "REDD",
+      "name": "Cam-Mount-L",
+      "release": true
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "RIDD",
+      "name": "Cam-Mount-R",
+      "release": true
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "RJDD",
+      "name": "Boot-RR",
+      "release": true
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "RJDH",
+      "name": "Boot-FR",
+      "release": true
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "RNDD",
+      "name": "anti-slip pad",
+      "release": true
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "RhDD",
+      "name": "Part 19",
+      "release": false
+    },
+    {
+      "partStudio": "311a9ccaf4570ac11afc63e4",
+      "partId": "JQD",
+      "name": "m2 pressnut",
+      "release": false
+    },
+    {
+      "partStudio": "311a9ccaf4570ac11afc63e4",
+      "partId": "JQH",
+      "name": "m2.5 pressnut",
+      "release": false
+    },
+    {
+      "partStudio": "56ce93b60ab3c76a7958d3b0",
+      "partId": "JHD",
+      "name": "softmount m2",
+      "release": false
+    }
+  ]
+}
