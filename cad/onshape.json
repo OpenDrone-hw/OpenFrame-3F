@@ -170,5 +170,20 @@
       "name": "softmount m2",
       "release": false
     }
-  ]
+  ],
+  "agentBranch": {
+    "id": "11b548430ebaa957be2f9c93",
+    "name": "agent/model-checks-3in",
+    "url": "https://cad.onshape.com/documents/78e093d02798373a79bc68d0/w/11b548430ebaa957be2f9c93"
+  },
+  "modelCheck": {
+    "ignoreUnused": [
+      "Receiver/Antenna-Mount",
+      "Bumpr"
+    ],
+    "reasons": {
+      "Receiver/Antenna-Mount": "kept in the model, not part of the set",
+      "Bumpr": "kept in the model, not part of the set"
+    }
+  }
 }
