@@ -105,9 +105,7 @@ The table reflects the Onshape branch workspace `agent/model-checks-3in` (`agent
 
 Chamfers 0.5 mm 45°, outer fillets R1.0 mm, inner fillets R1.05 mm unless the
 drawing says otherwise. The cross-to-arm interface is a press fit and is the
-tightest tolerance in the design. The earlier drawings, STEP files and supplier
-pack are at the `pre-reset-2026-08-13` tag of OpenFrame-5F; they are history,
-not the current release.
+tightest tolerance in the design. No drawings have been released from this repository yet.
 
 ## Licence
 
