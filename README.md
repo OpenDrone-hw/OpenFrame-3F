@@ -19,7 +19,6 @@ flowchart LR
   O["Onshape<br/>OpenDrone-V2, workspace 3 inch"] --> V["Named version"]
   V --> E["onshape_release.py"]
   E --> R["releases/rev/<br/>STEP, drawings, manifest"]
-  R --> S["Suppliers"]
 ```
 
 | | |
