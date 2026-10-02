@@ -17,23 +17,22 @@ incutec OpenDrone line. The 3" and 5" frames are separate repositories:
 ```mermaid
 flowchart LR
   O["Onshape<br/>OpenDrone-V2, workspace 3 inch"] --> V["Named version"]
-  V --> E["onshape_release.py"]
-  E --> R["releases/rev/<br/>STEP, drawings, manifest"]
+  V --> R["releases/rev/<br/>STEP, drawings, manifest"]
 ```
 
 | | |
 |---|---|
 | Source | [Onshape document OpenDrone-V2, workspace 3"](https://cad.onshape.com/documents/78e093d02798373a79bc68d0/w/0fcddf153f58a0417231386c) |
 | Link file | [`cad/onshape.json`](cad/onshape.json): document, workspace, element and part ids |
-| Released exports | `releases/<rev>/`, written by `onshape_release.py`, never edited |
+| Released exports | `releases/<rev>/`, exported from a named Onshape version and never edited. No revision has been released yet. |
 | Parts per set | [`parts.csv`](parts.csv) |
 | Fasteners and hardware | [`hardware.csv`](hardware.csv) |
-| Standard | Incutec mechanical repository template (`templates/mechanical-repository` in the hardware tooling) |
+| Standard | Incutec mechanical repository template |
 
 ## A set
 
 17 part types, 23 pieces, 8 of them carbon. Taken from the
-Onshape assembly; materials are as set in the agent branch model. The
+Onshape assembly; materials are as set in the Onshape model. The
 Onshape material library has no TPU entry, so the TPU parts carry
 `Polyurethane`; the pad carries `Silicone Rubber`.
 `Receiver/Antenna-Mount` and `Bumpr` are kept in the `frame` Part Studio but
@@ -76,18 +75,14 @@ Fasteners and hardware per set, from the same assembly:
 
 ## Model checks
 
-The table is the output of the hardware tooling's
-`python3 hardware/onshape_model_check.py cad/onshape.json --repo . --agent-branch`,
-run on 2026-09-25. A row stays until the model is fixed; rerun the tool and
-paste its output to refresh it.
-
-The table reflects the Onshape branch workspace `agent/model-checks-3in` (`agentBranch` in `cad/onshape.json`), pending its merge into workspace 3".
+Result of the Incutec Onshape model check, run on 2026-09-25 against a
+branch of workspace 3" in the Onshape document. A row stays until the model is fixed.
 
 | Check | Finding |
 |---|---|
 | All | No findings |
 
-## Dimensions from the last released drawing
+## Key dimensions
 
 | | 3" |
 |---|---|
@@ -103,8 +98,9 @@ The table reflects the Onshape branch workspace `agent/model-checks-3in` (`agent
 | Camera mount thread | M2.5 |
 
 Chamfers 0.5 mm 45°, outer fillets R1.0 mm, inner fillets R1.05 mm unless the
-drawing says otherwise. The cross-to-arm interface is a press fit and is the
-tightest tolerance in the design. No drawings have been released from this repository yet.
+released drawing says otherwise. The cross-to-arm interface is a press fit and is the
+tightest tolerance in the design. These are design values: no drawings have been
+released from this repository yet.
 
 ## Licence
 
