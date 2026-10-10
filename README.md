@@ -32,55 +32,65 @@ flowchart LR
 ## A set
 
 17 part types, 23 pieces, 8 of them carbon. Taken from the
-Onshape assembly; materials are as set in the Onshape model. The
-Onshape material library has no TPU entry, so the TPU parts carry
-`Polyurethane`; the pad carries `Silicone Rubber`.
-`Receiver/Antenna-Mount` and `Bumpr` are kept in the `frame` Part Studio but
-are not part of the set (`modelCheck.ignoreUnused` in `cad/onshape.json`).
+Onshape assembly (snapshot of 2026-10-09). Materials are as set in the Onshape model and blank where
+the model sets none; the process column is not from the model. Carbon plate and side plate (Standoff-L/R)
+thicknesses are measured values.
+`Receiver/Antenna-Mount` is kept in the `frame` Part Studio but is not part of the set
+(`modelCheck.ignoreUnused` in `cad/onshape.json`). `BigBoot`, `Bumpr` and `xt30Mount` are in the
+assembly and not yet in `parts.csv`; the model check lists them.
 
 | Part | Qty | Material | Thickness | Made by |
 |---|---|---|---|---|
+| 20mmx4mm | 4 | Aluminum |  | CNC aluminium |
+| Airtag/Antenna-Mount | 1 | PLA |  | 3D print, TPU |
+| anti-slip pad | 1 |  |  | moulded silicone |
 | Arm | 4 | Carbon fiber epoxy (61%) | 4 mm | CNC carbon plate |
-| Boot-FL | 1 | Polyurethane |  | 3D print, TPU |
-| Boot-FR | 1 | Polyurethane |  | 3D print, TPU |
-| Boot-RL | 1 | Polyurethane |  | 3D print, TPU |
-| Boot-RR | 1 | Polyurethane |  | 3D print, TPU |
-| Cam-Mount-L | 1 | Polyurethane |  | 3D print, TPU |
-| Cam-Mount-R | 1 | Polyurethane |  | 3D print, TPU |
-| Cross | 1 | Carbon fiber epoxy (61%) | 4 mm | CNC carbon plate |
-| Airtag/Antenna-Mount | 1 | Polyurethane |  | 3D print, TPU |
-| VTX-Mount | 1 | Polyurethane |  | 3D print, TPU |
-| anti-slip pad | 1 | Silicone Rubber |  | moulded silicone |
 | Base-Bot | 1 | Carbon fiber epoxy (61%) | 2.5 mm | CNC carbon plate |
 | Base-Top | 1 | Carbon fiber epoxy (61%) | 2.5 mm | CNC carbon plate |
+| bootFL | 1 |  |  | 3D print, TPU |
+| bootFR | 1 |  |  | 3D print, TPU |
+| bootRL | 1 |  |  | 3D print, TPU |
+| bootRR | 1 |  |  | 3D print, TPU |
+| Cam-Mount-L | 1 | PLA |  | 3D print, TPU |
+| Cam-Mount-R | 1 | PLA |  | 3D print, TPU |
+| Cross | 1 | Carbon fiber epoxy (61%) | 4 mm | CNC carbon plate |
+| Standoff-L | 1 | Aluminum | 6 mm | CNC aluminium |
+| Standoff-R | 1 | Aluminum | 6 mm | CNC aluminium |
 | Top | 1 | Carbon fiber epoxy (61%) | 2 mm | CNC carbon plate |
-| 20mmx4mm | 4 | Aluminum |  | CNC aluminium |
-| Standoff-L | 1 | Aluminum |  | CNC aluminium |
-| Standoff-R | 1 | Aluminum |  | CNC aluminium |
+| VTX-Mount | 1 | PLA |  | 3D print, TPU |
 
 Fasteners and hardware per set, from the same assembly:
 
 | Item | Qty |
 |---|---|
-| Black-Oxide Alloy Steel Hex Drive Flat Head Screw | 5 |
 | Hex nut grade A & B M2x0.4 | 4 |
 | Hex socket countersunk head screw M2x0.4 x 5 | 4 |
-| Hexalobular socket pan head screw M2.5x0.45 x 10 | 4 |
-| Hexalobular socket pan head screw M2.5x0.45 x 6 | 16 |
-| Hexalobular socket pan head screw M2x0.40 x 20 | 4 |
-| Hexalobular socket pan head screw M2x0.40 x 6 | 17 |
+| Hex socket head countersunk screw grade C M3x0.5 x 8 | 2 |
 | m2 pressnut | 4 |
-| m2.5 pressnut | 6 |
+| m3 pressnut | 7 |
+| Socket button head screw M2x0.4 x 10 | 10 |
+| Socket button head screw M2x0.4 x 22 | 4 |
+| Socket button head screw M3x0.5 x 10 | 5 |
+| Socket button head screw M3x0.5 x 6 | 14 |
+| Socket button head screw M3x0.5 x 8 | 2 |
 | softmount m2 | 8 |
+| Washer M3 | 5 |
+
+Motor screws (16 x M2x6) ship with the motors and are not frame hardware. The Onshape
+assembly names the Base-Top press nuts `m2.5 pressnut` (6); they are M3 and there are 7,
+so `hardware.csv` lists `m3 pressnut` 7. Both are under `modelCheck.ignoreHardware` and
+`reasons` in `cad/onshape.json`.
 
 ## Model checks
 
-Result of the Incutec Onshape model check, run on 2026-09-25 against a
-branch of workspace 3" in the Onshape document. A row stays until the model is fixed.
+Result of the Incutec Onshape model check, run offline on 2026-10-09 against the
+snapshot of workspace 3" in the Onshape document. A row stays until the model is fixed.
 
 | Check | Finding |
 |---|---|
-| All | No findings |
+| Materials | `bootRR`, `BigBoot`, `bootFR`, `bootFL`, `xt30Mount`, `Bumpr`, `anti-slip pad` and `bootRL` have no material set in the model |
+| Parts list | `BigBoot`: assembly 1, not in parts.csv; `Bumpr`: assembly 1, not in parts.csv; `xt30Mount`: assembly 1, not in parts.csv |
+| Hardware | `m3 pressnut`: hardware.csv 7, assembly 0 |
 
 ## Key dimensions
 
@@ -91,6 +101,7 @@ branch of workspace 3" in the Onshape document. A row stays until the model is f
 | Bottom plate | 2.5 mm |
 | Cross | 4.0 mm |
 | Arm | 4.0 mm |
+| Side plates (Standoff-L/R) | 6.0 mm |
 | Bolt holes | Ø2.1 (M2), Ø2.6 (M2.5) |
 | Press-nut holes | Ø3.5 (M2), Ø4.0 (M2.5) |
 | Bolt-head counterbore | Ø3.8 (M2 ISO 7380) |
