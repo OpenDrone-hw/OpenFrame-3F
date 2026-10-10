@@ -3,7 +3,7 @@
   "document": {
     "id": "78e093d02798373a79bc68d0",
     "name": "OpenDrone-V2",
-    "owner": "design lead",
+    "owner": "Incutec BV",
     "url": "https://cad.onshape.com/documents/78e093d02798373a79bc68d0/w/0fcddf153f58a0417231386c"
   },
   "workspace": {
@@ -24,6 +24,11 @@
     {
       "id": "56ce93b60ab3c76a7958d3b0",
       "name": "Softmount",
+      "type": "PARTSTUDIO"
+    },
+    {
+      "id": "263210d35ab9306f98754046",
+      "name": "Washer",
       "type": "PARTSTUDIO"
     },
     {
@@ -94,62 +99,74 @@
     },
     {
       "partStudio": "706f33d195388d882b65aa32",
-      "partId": "RtBD",
+      "partId": "RkBD",
       "name": "Airtag/Antenna-Mount",
       "release": true
     },
     {
       "partStudio": "706f33d195388d882b65aa32",
-      "partId": "RFCD",
+      "partId": "R8BD",
       "name": "Receiver/Antenna-Mount",
       "release": false
     },
     {
       "partStudio": "706f33d195388d882b65aa32",
-      "partId": "RrCD",
-      "name": "Boot-RL",
-      "release": true
-    },
-    {
-      "partStudio": "706f33d195388d882b65aa32",
-      "partId": "RBDD",
-      "name": "Boot-FL",
-      "release": true
-    },
-    {
-      "partStudio": "706f33d195388d882b65aa32",
-      "partId": "REDD",
+      "partId": "R4CD",
       "name": "Cam-Mount-L",
       "release": true
     },
     {
       "partStudio": "706f33d195388d882b65aa32",
-      "partId": "RIDD",
+      "partId": "R8CD",
       "name": "Cam-Mount-R",
       "release": true
     },
     {
       "partStudio": "706f33d195388d882b65aa32",
-      "partId": "RJDD",
-      "name": "Boot-RR",
-      "release": true
-    },
-    {
-      "partStudio": "706f33d195388d882b65aa32",
-      "partId": "RJDH",
-      "name": "Boot-FR",
-      "release": true
-    },
-    {
-      "partStudio": "706f33d195388d882b65aa32",
-      "partId": "RNDD",
+      "partId": "RBDD",
       "name": "anti-slip pad",
       "release": true
     },
     {
       "partStudio": "706f33d195388d882b65aa32",
-      "partId": "RhDD",
+      "partId": "RVDD",
       "name": "Bumpr",
+      "release": false
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "RvED",
+      "name": "BigBoot",
+      "release": false
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "R1CD",
+      "name": "bootFL",
+      "release": true
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "R9CH",
+      "name": "bootFR",
+      "release": true
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "RiCD",
+      "name": "bootRL",
+      "release": true
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "R9CD",
+      "name": "bootRR",
+      "release": true
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "RMFD",
+      "name": "xt30Mount",
       "release": false
     },
     {
@@ -169,6 +186,12 @@
       "partId": "JHD",
       "name": "softmount m2",
       "release": false
+    },
+    {
+      "partStudio": "263210d35ab9306f98754046",
+      "partId": "JJD",
+      "name": "Washer M3",
+      "release": false
     }
   ],
   "agentBranch": {
@@ -178,12 +201,16 @@
   },
   "modelCheck": {
     "ignoreUnused": [
-      "Receiver/Antenna-Mount",
-      "Bumpr"
+      "Receiver/Antenna-Mount"
     ],
     "reasons": {
       "Receiver/Antenna-Mount": "kept in the model, not part of the set",
-      "Bumpr": "kept in the model, not part of the set"
-    }
+      "Socket button head screw M2x0.4 x 6": "motor screws, shipped with the motors, not frame hardware",
+      "m2.5 pressnut": "stale CAD name: the 7 press nuts in the Base-Top are M3, counted as m3 pressnut in hardware.csv"
+    },
+    "ignoreHardware": [
+      "Socket button head screw M2x0.4 x 6",
+      "m2.5 pressnut"
+    ]
   }
 }
