@@ -102,8 +102,9 @@ snapshot of workspace 3" in the Onshape document. A row stays until the model is
 | Cross | 4.0 mm |
 | Arm | 4.0 mm |
 | Side plates (Standoff-L/R) | 6.0 mm |
-| Bolt holes | Ø2.1 (M2), Ø2.6 (M2.5) |
-| Press-nut holes | Ø3.5 (M2), Ø4.0 (M2.5) |
+| Bolt holes | Ø2.1 (M2) and Ø2.9 (M3), sized to grip the screw thread |
+| Press-nut holes (Base-Top) | 7x Ø4.5 with Ø5.5 x 1.0 recess (M3), nut flush with the top face |
+| Countersinks (Base-Top) | 2x Ø6.5 x 90° on Ø2.9 (M3) |
 | Bolt-head counterbore | Ø3.8 (M2 ISO 7380) |
 | Countersink | Ø2.6 + 1.5 mm 45° (M2.5 ISO 10643) |
 | Camera mount thread | M2.5 |
