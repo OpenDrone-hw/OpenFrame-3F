@@ -1,16 +1,18 @@
 # OpenFrame-3F
 
-The 3" frame. Design source is the Onshape document in `cad/onshape.json`; this repository holds the link, the released exports and the parts lists.
+The 3" frame. The design source is the Onshape document in
+`cad/onshape.json` (OpenDrone-V2, workspace 3"); this repository holds
+the link, the released exports and the parts lists. It follows the Incutec
+mechanical repository template. Use the Onshape skill for any CAD work.
 
-Validate: `python3 <hardware-tooling>/hardware/mechanical_check.py .`
+| | |
+|---|---|
+| Status | See the `status-*` topic on the repo. Never written here. |
+| Validate | `python3 <hardware-tooling>/hardware/mechanical_check.py .` |
+| Release | `onshape_release.py cad/onshape.json --version <rev> --apply`, then one commit adding `releases/<rev>/` |
+| License | CERN-OHL-S-2.0 |
 
-## Boundaries
-
-- Never edit a file under `releases/`: fix the model in Onshape and release a new revision.
-- The 3" and 5" frames share one Part Studio in OpenDrone-V2: a change to a shared part affects both repositories.
-- Sourcing (suppliers, prices, quotes, RFQs, contacts) never lives in OpenDrone repositories.
-
-## Pointers
-
-- Release: `onshape_release.py cad/onshape.json --version <rev> --apply`, then one commit adding `releases/<rev>/`
-- CAD work: Onshape skill
+- Never edit a file under `releases/`. Fix the model in Onshape and release a new revision.
+- A part added, removed or re-counted in the Onshape assembly changes `parts.csv` or `hardware.csv` in the same pull request.
+- The 3" and 5" frames share one Part Studio in OpenDrone-V2; a change to a shared part affects both repositories.
+- Sourcing (suppliers, prices, quotes, RFQs, contacts) is handled by Incutec and never lives in OpenDrone repositories.
