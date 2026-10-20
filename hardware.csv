@@ -2,8 +2,9 @@ item,standard,size,qty_per_set,notes
 Hex nut grade A & B M2x0.4,ISO 4032,M2,4,from the Onshape assembly
 Hex socket countersunk head screw M2x0.4 x 5,ISO 10642,M2x5,4,from the Onshape assembly
 Hex socket head countersunk screw grade C M3x0.5 x 8,,M3x8,2,from the Onshape assembly
+Hexagon Socket Button Head Screw With Collar STN EN ISO 7380-2 - M3 x 6 Steel 10.9 Chrome v1,ISO 7380-2,M3x6,1,from the Onshape assembly
 m2 pressnut,,,4,from the Onshape assembly
-m3 pressnut,,,7,from the Onshape assembly
+m3 pressnut,,,7,7 holes on the drawing; the Onshape assembly has 6 instances
 Socket button head screw M2x0.4 x 10,ISO 7380,M2x10,10,from the Onshape assembly
 Socket button head screw M2x0.4 x 22,ISO 7380,M2x22,4,from the Onshape assembly
 Socket button head screw M3x0.5 x 10,ISO 7380,M3x10,5,from the Onshape assembly
