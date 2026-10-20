@@ -1,0 +1,173 @@
+{
+  "files": [
+    {
+      "path": "step/Arm.step",
+      "sha256": "562ec9fa755068e7940311101dcc9078e8b91b159e93e68c1639dd3ca4abdc12"
+    },
+    {
+      "path": "step/Cross.step",
+      "sha256": "9d682e3bc0fdab3f16a06c8a88513ec0328b064c311528b3da8509813860d2c2"
+    },
+    {
+      "path": "step/Base-Top.step",
+      "sha256": "31920d9e3bffbd3a1cb8491e38d05be0fed6091204ef996b99b1a1439cf4bc7a"
+    },
+    {
+      "path": "step/Base-Bot.step",
+      "sha256": "2f7c5f7c072c2042a1ae1a52c50ddae5eeb8a3faeafa00c61a60d46d410e7b8a"
+    },
+    {
+      "path": "step/Top.step",
+      "sha256": "136068b12c242516fe937793f7c1c4dbd0e83bb9262e5b1baee3eac9d5274cd1"
+    },
+    {
+      "path": "step/Standoff-L.step",
+      "sha256": "9165523578a9778d6096e881493f5c29bb0c2964e1f21b7360182d1bcfae4df4"
+    },
+    {
+      "path": "step/Standoff-R.step",
+      "sha256": "2108c59f976c3eb111a475d38338d42fb1eaf1afd6ef947082bbaf8defa22735"
+    },
+    {
+      "path": "step/20mmx4mm.step",
+      "sha256": "39cf07985e6fbe5711de99ea48b9f8f582efaa456bb39e41d4015b7578417410"
+    },
+    {
+      "path": "step/VTX-Mount.step",
+      "sha256": "0f63ab95d2b0264bd94dcd851e5cdea56d09c8ce16721824263b54d038f7b483"
+    },
+    {
+      "path": "step/Airtag-Antenna-Mount.step",
+      "sha256": "34a9f76c36c8eed4ba77dfe13b73ef5a891f5bc4ee7a0d16bbc30bc72bd0a851"
+    },
+    {
+      "path": "step/Boot-L.step",
+      "sha256": "400da7a8aaf09111806284bf3cc6852058c8ee0e1cdd2f3024f15a1789ae2dec"
+    },
+    {
+      "path": "step/Boot-R.step",
+      "sha256": "608234e99d0395569a85d6ebfc17ab4113ce2b185d5872b9fc468fee8579ebcf"
+    },
+    {
+      "path": "step/Cam-Mount.step",
+      "sha256": "ccdfaaef2ffeb00e398452f66788faa5c147ad6b200d615b5186f9e2ec974ef0"
+    },
+    {
+      "path": "drawings/Drawing-1.pdf",
+      "sha256": "8eb6706e668d608d4930e04f6c9a8aa48c91cdc11a9ea469bab534299e13ae49"
+    }
+  ],
+  "document": {
+    "id": "78e093d02798373a79bc68d0",
+    "name": "OpenDrone-V2",
+    "url": "https://cad.onshape.com/documents/78e093d02798373a79bc68d0/w/0fcddf153f58a0417231386c"
+  },
+  "workspace": {
+    "id": "0fcddf153f58a0417231386c",
+    "name": "3\""
+  },
+  "version": {
+    "id": "af73ffd19b0ac486a3577cf2",
+    "name": "OpenFrame-3F rev1"
+  },
+  "microversion": "f877e85425d535f6c880527f",
+  "elements": [
+    {
+      "id": "706f33d195388d882b65aa32",
+      "name": "frame",
+      "type": "PARTSTUDIO"
+    },
+    {
+      "id": "fce8fc1bdf426e13532126f3",
+      "name": "Assembly 1",
+      "type": "ASSEMBLY"
+    },
+    {
+      "id": "248e177ed0d9d8fc9c2803c2",
+      "name": "Drawing 1",
+      "type": "DRAWING"
+    }
+  ],
+  "parts": [
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "JHD",
+      "name": "Arm",
+      "path": "step/Arm.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "JHH",
+      "name": "Cross",
+      "path": "step/Cross.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "JKD",
+      "name": "Base-Top",
+      "path": "step/Base-Top.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "JND",
+      "name": "Base-Bot",
+      "path": "step/Base-Bot.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "JQD",
+      "name": "Top",
+      "path": "step/Top.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "JuD",
+      "name": "Standoff-L",
+      "path": "step/Standoff-L.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "RCBD",
+      "name": "Standoff-R",
+      "path": "step/Standoff-R.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "RBBD",
+      "name": "20mmx4mm",
+      "path": "step/20mmx4mm.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "RFBH",
+      "name": "VTX-Mount",
+      "path": "step/VTX-Mount.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "RhBD",
+      "name": "Airtag-Antenna-Mount",
+      "path": "step/Airtag-Antenna-Mount.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "RXCD",
+      "name": "Boot-L",
+      "path": "step/Boot-L.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "RtCD",
+      "name": "Boot-R",
+      "path": "step/Boot-R.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "RwCD",
+      "name": "Cam-Mount",
+      "path": "step/Cam-Mount.step"
+    }
+  ],
+  "exported_at": "2026-10-20T12:07:25Z",
+  "tool": "onshape_release.py"
+}
