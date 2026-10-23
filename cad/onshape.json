@@ -75,103 +75,103 @@
     },
     {
       "partStudio": "706f33d195388d882b65aa32",
-      "partId": "JtD",
+      "partId": "JuD",
       "name": "Standoff-L",
       "release": true
     },
     {
       "partStudio": "706f33d195388d882b65aa32",
-      "partId": "J/D",
+      "partId": "RABD",
       "name": "20mmx4mm",
       "release": true
     },
     {
       "partStudio": "706f33d195388d882b65aa32",
-      "partId": "RABD",
+      "partId": "RBBD",
       "name": "Standoff-R",
       "release": true
     },
     {
       "partStudio": "706f33d195388d882b65aa32",
-      "partId": "RDBH",
+      "partId": "REBH",
       "name": "VTX-Mount",
       "release": true
     },
     {
       "partStudio": "706f33d195388d882b65aa32",
-      "partId": "RkBD",
+      "partId": "RrBD",
       "name": "Airtag/Antenna-Mount",
       "release": true
     },
     {
       "partStudio": "706f33d195388d882b65aa32",
-      "partId": "R8BD",
+      "partId": "RDCD",
       "name": "Receiver/Antenna-Mount",
       "release": false
     },
     {
       "partStudio": "706f33d195388d882b65aa32",
-      "partId": "R4CD",
+      "partId": "R/CD",
       "name": "Cam-Mount-L",
       "release": true
     },
     {
       "partStudio": "706f33d195388d882b65aa32",
-      "partId": "R8CD",
+      "partId": "RDDD",
       "name": "Cam-Mount-R",
       "release": true
     },
     {
       "partStudio": "706f33d195388d882b65aa32",
-      "partId": "RBDD",
+      "partId": "RIDD",
       "name": "anti-slip pad",
       "release": true
     },
     {
       "partStudio": "706f33d195388d882b65aa32",
-      "partId": "RVDD",
+      "partId": "RcDD",
       "name": "Bumpr",
       "release": false
     },
     {
       "partStudio": "706f33d195388d882b65aa32",
-      "partId": "RqED",
+      "partId": "RwED",
       "name": "BigBoot",
       "release": false
     },
     {
       "partStudio": "706f33d195388d882b65aa32",
-      "partId": "R1CD",
+      "partId": "R8CD",
       "name": "bootFL",
       "release": true
     },
     {
       "partStudio": "706f33d195388d882b65aa32",
-      "partId": "R9CH",
+      "partId": "REDH",
       "name": "bootFR",
       "release": true
     },
     {
       "partStudio": "706f33d195388d882b65aa32",
-      "partId": "RiCD",
+      "partId": "RpCD",
       "name": "bootRL",
       "release": true
     },
     {
       "partStudio": "706f33d195388d882b65aa32",
-      "partId": "R9CD",
+      "partId": "REDD",
       "name": "bootRR",
       "release": true
     },
     {
       "partStudio": "706f33d195388d882b65aa32",
-      "partId": "RHFD",
+      "partId": "RNFD",
       "name": "xt30Mount",
       "release": false
     },
     {
       "partStudio": "706f33d195388d882b65aa32",
-      "partId": "RlFD",
+      "partId": "RrFD",
       "name": "TopBumpr",
       "release": false
     },
@@ -184,7 +184,7 @@
     {
       "partStudio": "311a9ccaf4570ac11afc63e4",
       "partId": "JQH",
-      "name": "m2.5 pressnut",
+      "name": "m3 pressnut",
       "release": false
     },
     {
