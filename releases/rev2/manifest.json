@@ -1,0 +1,228 @@
+{
+  "files": [
+    {
+      "path": "step/Arm.step",
+      "sha256": "fecacd3f662028b99dea592a890d096ad77329eca9144555aef23b4d8bc77cc1"
+    },
+    {
+      "path": "step/Cross.step",
+      "sha256": "ee7ff4eeb5bf91874346247b16f4b82f76e2ac3c1036bb413a1bf6e4a4a10335"
+    },
+    {
+      "path": "step/Base-Top.step",
+      "sha256": "546dd5b3802c65bae1495a9468efffc19995c4cd0f8760c78d66f276d1678761"
+    },
+    {
+      "path": "step/Base-Bot.step",
+      "sha256": "84de6805e0ab08df54cb7189e6f2c11215080d1ee951e2bed4a32e58990f4d8b"
+    },
+    {
+      "path": "step/Top.step",
+      "sha256": "6ee3e8d3c0e5f78f53e658aceef4ecbc581c227c94efcd29205a160190c7b9d6"
+    },
+    {
+      "path": "step/Standoff-L.step",
+      "sha256": "3850a688ce92f25f8c89548ad50e19732d8ce920597acbc20e34a6e0ddf06c8a"
+    },
+    {
+      "path": "step/20mmx4mm.step",
+      "sha256": "e71dda559a71bcd137d4b0789a8a8d444c63105a62a33222a3fe85b3bc97cbd1"
+    },
+    {
+      "path": "step/Standoff-R.step",
+      "sha256": "d75b7aafda09387f8b4a0cef989728fb73d17bf011bdb857de973d7fdacf0e16"
+    },
+    {
+      "path": "step/VTX-Mount.step",
+      "sha256": "0e5a7dd49b25c37effca50c8a345c5e23ecf084abbec453e1b6fb292cefe49ba"
+    },
+    {
+      "path": "step/Airtag-Antenna-Mount.step",
+      "sha256": "cf85e84ff47ff3beedca1c6dc1b36b18cd3bb6fd6a67b8ed8f05cdfdab3bf476"
+    },
+    {
+      "path": "step/Cam-Mount-L.step",
+      "sha256": "37a6f11ab98878ad9a93ee17f613cf089edb7af172b81739afee6c563ab2a9f5"
+    },
+    {
+      "path": "step/Cam-Mount-R.step",
+      "sha256": "818cbc1e612a2b4cfdd02c8c18689f68aa7015afcbf76c07f86f4bc79c1fd4c6"
+    },
+    {
+      "path": "step/anti-slip-pad.step",
+      "sha256": "8c85523a13883789290988df774716a853679773bb01f45ca87e52895ffcf100"
+    },
+    {
+      "path": "step/bootFL.step",
+      "sha256": "ce3803e0bde0a1c97e3b525d76d65fc189289e534ac5c9e9d54b96226c6315b2"
+    },
+    {
+      "path": "step/bootFR.step",
+      "sha256": "757f8ea61e4f1c8d945069771c77f174ba6590835456dd8db75de8bbe708e03d"
+    },
+    {
+      "path": "step/bootRL.step",
+      "sha256": "adca4ef3e87eca96603ff3458d5d8068cc747018c2cfd597b89b538dd98062e6"
+    },
+    {
+      "path": "step/bootRR.step",
+      "sha256": "530bc1ab883e01985f91638d93b81e3533e60659b8bf44ac559e0856f3f03666"
+    },
+    {
+      "path": "drawings/Drawing-1.pdf",
+      "sha256": "512dc8cfa3f6e23f51d92bb9c367f0e9f99d1ac4aac1358507969ad7ae65a7ee"
+    }
+  ],
+  "document": {
+    "id": "78e093d02798373a79bc68d0",
+    "name": "OpenDrone-V2",
+    "url": "https://cad.onshape.com/documents/78e093d02798373a79bc68d0/w/0fcddf153f58a0417231386c"
+  },
+  "workspace": {
+    "id": "0fcddf153f58a0417231386c",
+    "name": "3\""
+  },
+  "version": {
+    "id": "1f3b848f9da18cf620aabfd1",
+    "name": "OpenFrame-3F rev2"
+  },
+  "microversion": "10c00d2f68e6027651b1b59e",
+  "elements": [
+    {
+      "id": "706f33d195388d882b65aa32",
+      "name": "frame",
+      "type": "PARTSTUDIO"
+    },
+    {
+      "id": "311a9ccaf4570ac11afc63e4",
+      "name": "pressnuts",
+      "type": "PARTSTUDIO"
+    },
+    {
+      "id": "56ce93b60ab3c76a7958d3b0",
+      "name": "Softmount",
+      "type": "PARTSTUDIO"
+    },
+    {
+      "id": "263210d35ab9306f98754046",
+      "name": "Washer",
+      "type": "PARTSTUDIO"
+    },
+    {
+      "id": "fce8fc1bdf426e13532126f3",
+      "name": "OpenDrone-3",
+      "type": "ASSEMBLY"
+    },
+    {
+      "id": "248e177ed0d9d8fc9c2803c2",
+      "name": "Drawing 1",
+      "type": "DRAWING"
+    }
+  ],
+  "parts": [
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "JHD",
+      "name": "Arm",
+      "path": "step/Arm.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "JHH",
+      "name": "Cross",
+      "path": "step/Cross.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "JKD",
+      "name": "Base-Top",
+      "path": "step/Base-Top.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "JND",
+      "name": "Base-Bot",
+      "path": "step/Base-Bot.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "JQD",
+      "name": "Top",
+      "path": "step/Top.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "JtD",
+      "name": "Standoff-L",
+      "path": "step/Standoff-L.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "J/D",
+      "name": "20mmx4mm",
+      "path": "step/20mmx4mm.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "RABD",
+      "name": "Standoff-R",
+      "path": "step/Standoff-R.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "RDBH",
+      "name": "VTX-Mount",
+      "path": "step/VTX-Mount.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "RkBD",
+      "name": "Airtag/Antenna-Mount",
+      "path": "step/Airtag-Antenna-Mount.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "R4CD",
+      "name": "Cam-Mount-L",
+      "path": "step/Cam-Mount-L.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "R8CD",
+      "name": "Cam-Mount-R",
+      "path": "step/Cam-Mount-R.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "RBDD",
+      "name": "anti-slip pad",
+      "path": "step/anti-slip-pad.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "R1CD",
+      "name": "bootFL",
+      "path": "step/bootFL.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "R9CH",
+      "name": "bootFR",
+      "path": "step/bootFR.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "RiCD",
+      "name": "bootRL",
+      "path": "step/bootRL.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "R9CD",
+      "name": "bootRR",
+      "path": "step/bootRR.step"
+    }
+  ],
+  "exported_at": "2026-10-20T12:16:18Z",
+  "tool": "onshape_release.py"
+}

@@ -24,20 +24,21 @@ flowchart LR
 |---|---|
 | Source | [Onshape document OpenDrone-V2, workspace 3"](https://cad.onshape.com/documents/78e093d02798373a79bc68d0/w/0fcddf153f58a0417231386c) |
 | Link file | [`cad/onshape.json`](cad/onshape.json): document, workspace, element and part ids |
-| Released exports | `releases/<rev>/`, exported from a named Onshape version and never edited. No revision has been released yet. |
+| Released exports | `releases/<rev>/`, exported from a named Onshape version and never edited: [`rev1`](releases/rev1) (2026-07-05, first CNC samples) and [`rev2`](releases/rev2) (2026-10-20, handoff package rev F). The first production batch is cut from rev2 plus the unreleased changes in [`CHANGELOG.md`](CHANGELOG.md) |
+| Changes per revision | [`CHANGELOG.md`](CHANGELOG.md), with the hardware list of each revision |
 | Parts per set | [`parts.csv`](parts.csv) |
 | Fasteners and hardware | [`hardware.csv`](hardware.csv) |
 | Standard | Incutec mechanical repository template |
 
 ## A set
 
-17 part types, 23 pieces, 8 of them carbon. Taken from the
-Onshape assembly (snapshot of 2026-10-09). Materials are as set in the Onshape model and blank where
+rev2. 17 part types, 23 pieces, 8 of them carbon. Taken from the
+Onshape assembly (version `OpenFrame-3F rev2`, 2026-10-20). Materials are as set in the Onshape model and blank where
 the model sets none; the process column is not from the model. Carbon plate and side plate (Standoff-L/R)
 thicknesses are measured values.
 `Receiver/Antenna-Mount` is kept in the `frame` Part Studio but is not part of the set
-(`modelCheck.ignoreUnused` in `cad/onshape.json`). `BigBoot`, `Bumpr` and `xt30Mount` are in the
-assembly and not yet in `parts.csv`; the model check lists them.
+(`modelCheck.ignoreUnused` in `cad/onshape.json`), and so is `TopBumpr` until it is placed in the assembly.
+`BigBoot`, `Bumpr` and `xt30Mount` are in the assembly and not yet in `parts.csv`; the model check lists them.
 
 | Part | Qty | Material | Thickness | Made by |
 |---|---|---|---|---|
@@ -66,6 +67,7 @@ Fasteners and hardware per set, from the same assembly:
 | Hex nut grade A & B M2x0.4 | 4 |
 | Hex socket countersunk head screw M2x0.4 x 5 | 4 |
 | Hex socket head countersunk screw grade C M3x0.5 x 8 | 2 |
+| Button head screw with collar M3x6 (ISO 7380-2) | 1 |
 | m2 pressnut | 4 |
 | m3 pressnut | 7 |
 | Socket button head screw M2x0.4 x 10 | 10 |
@@ -76,23 +78,24 @@ Fasteners and hardware per set, from the same assembly:
 | softmount m2 | 8 |
 | Washer M3 | 5 |
 
-Motor screws (16 x M2x6) ship with the motors and are not frame hardware. The Onshape
-assembly names the Base-Top press nuts `m2.5 pressnut` (6); they are M3 and there are 7,
-so `hardware.csv` lists `m3 pressnut` 7. Both are under `modelCheck.ignoreHardware` and
-`reasons` in `cad/onshape.json`.
+Motor screws (16 x M2x6) ship with the motors and are not frame hardware. The middle
+plate (Base-Top) has 7 M3 insert holes on the drawing; the assembly places 6 `m3 pressnut`
+instances, so `hardware.csv` lists 7 and the model check reports the difference.
 
 ## Model checks
 
-Result of the Incutec Onshape model check, run offline on 2026-10-09 against the
-snapshot of workspace 3" in the Onshape document. A row stays until the model is fixed.
+Result of the Incutec Onshape model check, run on 2026-10-20 against the live
+workspace 3" in the Onshape document. A row stays until the model is fixed.
 
 | Check | Finding |
 |---|---|
 | Materials | `bootRR`, `BigBoot`, `bootFR`, `bootFL`, `xt30Mount`, `Bumpr`, `anti-slip pad` and `bootRL` have no material set in the model |
 | Parts list | `BigBoot`: assembly 1, not in parts.csv; `Bumpr`: assembly 1, not in parts.csv; `xt30Mount`: assembly 1, not in parts.csv |
-| Hardware | `m3 pressnut`: hardware.csv 7, assembly 0 |
+| Hardware | `m3 pressnut`: hardware.csv 7, assembly 6 |
 
 ## Key dimensions
+
+rev2, from the drawing in Onshape (`releases/rev2/drawings/Drawing-1.pdf`).
 
 | | 3" |
 |---|---|
@@ -102,17 +105,15 @@ snapshot of workspace 3" in the Onshape document. A row stays until the model is
 | Cross | 4.0 mm |
 | Arm | 4.0 mm |
 | Side plates (Standoff-L/R) | 6.0 mm |
-| Bolt holes | Ø2.1 (M2) and Ø2.9 (M3), sized to grip the screw thread |
-| Press-nut holes (Base-Top) | 7x Ø4.5 with Ø5.5 x 1.0 recess (M3), nut flush with the top face |
-| Countersinks (Base-Top) | 2x Ø6.5 x 90° on Ø2.9 (M3) |
-| Bolt-head counterbore | Ø3.8 (M2 ISO 7380) |
-| Countersink | Ø2.6 + 1.5 mm 45° (M2.5 ISO 10643) |
-| Camera mount thread | M2.5 |
+| M3 bolt holes | Ø3 H8 (3.000-3.010) |
+| M2 bolt holes | Ø2.1 |
+| Insert holes, middle plate | Ø4.5 (M3), Ø3.5 (M2), reference only: sized to the insert used |
+| Countersinks, middle plate | Ø3 + 1.8 mm 45° (M3 countersunk) |
+| Bolt-head counterbore, bottom plate | Ø4.1 (M2 button head) |
 
 Chamfers 0.5 mm 45°, outer fillets R1.0 mm, inner fillets R1.05 mm unless the
-released drawing says otherwise. The cross-to-arm interface is a press fit and is the
-tightest tolerance in the design. These are design values: no drawings have been
-released from this repository yet.
+drawing says otherwise. The cross-to-arm fit is the tightest tolerance in the design:
+0.000-0.100 mm between both parts on the drawing.
 
 ## Licence
 

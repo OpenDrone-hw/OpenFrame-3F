@@ -135,7 +135,7 @@
     },
     {
       "partStudio": "706f33d195388d882b65aa32",
-      "partId": "RvED",
+      "partId": "RqED",
       "name": "BigBoot",
       "release": false
     },
@@ -165,8 +165,14 @@
     },
     {
       "partStudio": "706f33d195388d882b65aa32",
-      "partId": "RMFD",
+      "partId": "RHFD",
       "name": "xt30Mount",
+      "release": false
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "RlFD",
+      "name": "TopBumpr",
       "release": false
     },
     {
@@ -201,16 +207,16 @@
   },
   "modelCheck": {
     "ignoreUnused": [
-      "Receiver/Antenna-Mount"
+      "Receiver/Antenna-Mount",
+      "TopBumpr"
     ],
     "reasons": {
       "Receiver/Antenna-Mount": "kept in the model, not part of the set",
       "Socket button head screw M2x0.4 x 6": "motor screws, shipped with the motors, not frame hardware",
-      "m2.5 pressnut": "stale CAD name: the 7 press nuts in the Base-Top are M3, counted as m3 pressnut in hardware.csv"
+      "TopBumpr": "in the Part Studio, not yet placed in the assembly (2026-10-20)"
     },
     "ignoreHardware": [
-      "Socket button head screw M2x0.4 x 6",
-      "m2.5 pressnut"
+      "Socket button head screw M2x0.4 x 6"
     ]
   }
 }
