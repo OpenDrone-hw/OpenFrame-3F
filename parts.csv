@@ -1,18 +1,18 @@
 part,type,material,thickness_mm,qty_per_set,process,sku,onshape_part
-20mmx4mm,standoff,Aluminum,,4,CNC aluminium,,J/D
-Airtag/Antenna-Mount,mount,PLA,,1,"3D print, TPU",,RkBD
-anti-slip pad,pad,,,1,moulded silicone,,RBDD
+20mmx4mm,standoff,Aluminum,,4,CNC aluminium,,RABD
+Airtag/Antenna-Mount,mount,PLA,,1,"3D print, TPU",,RrBD
+anti-slip pad,pad,,,1,moulded silicone,,RIDD
 Arm,arm,Carbon fiber epoxy (61%),4,4,CNC carbon plate,ACC-FRM-ARM-3,JHD
 Base-Bot,plate,Carbon fiber epoxy (61%),2.5,1,CNC carbon plate,ACC-FRM-BOT-3,JND
 Base-Top,plate,Carbon fiber epoxy (61%),2.5,1,CNC carbon plate,ACC-FRM-MID-3,JKD
-bootFL,arm boot,,,1,"3D print, TPU",,R1CD
-bootFR,arm boot,,,1,"3D print, TPU",,R9CH
-bootRL,arm boot,,,1,"3D print, TPU",,RiCD
-bootRR,arm boot,,,1,"3D print, TPU",,R9CD
-Cam-Mount-L,camera mount,PLA,,1,"3D print, TPU",,R4CD
-Cam-Mount-R,camera mount,PLA,,1,"3D print, TPU",,R8CD
+bootFL,arm boot,,,1,"3D print, TPU",,R8CD
+bootFR,arm boot,,,1,"3D print, TPU",,REDH
+bootRL,arm boot,,,1,"3D print, TPU",,RpCD
+bootRR,arm boot,,,1,"3D print, TPU",,REDD
+Cam-Mount-L,camera mount,PLA,,1,"3D print, TPU",,R/CD
+Cam-Mount-R,camera mount,PLA,,1,"3D print, TPU",,RDDD
 Cross,cross,Carbon fiber epoxy (61%),4,1,CNC carbon plate,ACC-FRM-CROSS-3,JHH
-Standoff-L,standoff,Aluminum,6,1,CNC aluminium,,JtD
-Standoff-R,standoff,Aluminum,6,1,CNC aluminium,,RABD
+Standoff-L,standoff,Aluminum,6,1,CNC aluminium,,JuD
+Standoff-R,standoff,Aluminum,6,1,CNC aluminium,,RBBD
 Top,plate,Carbon fiber epoxy (61%),2,1,CNC carbon plate,ACC-FRM-TOP-3,JQD
-VTX-Mount,mount,PLA,,1,"3D print, TPU",,RDBH
+VTX-Mount,mount,PLA,,1,"3D print, TPU",,REBH
