@@ -24,7 +24,7 @@ flowchart LR
 |---|---|
 | Source | [Onshape document OpenDrone-V2, workspace 3"](https://cad.onshape.com/documents/78e093d02798373a79bc68d0/w/0fcddf153f58a0417231386c) |
 | Link file | [`cad/onshape.json`](cad/onshape.json): document, workspace, element and part ids |
-| Released exports | `releases/<rev>/`, exported from a named Onshape version and never edited: [`rev1`](releases/rev1) (2026-07-05, first CNC samples) and [`rev2`](releases/rev2) (2026-10-20, first production batch) |
+| Released exports | `releases/<rev>/`, exported from a named Onshape version and never edited: [`rev1`](releases/rev1) (2026-07-05, first CNC samples) and [`rev2`](releases/rev2) (2026-10-20, handoff package rev F). The first production batch is cut from rev2 plus the unreleased changes in [`CHANGELOG.md`](CHANGELOG.md) |
 | Changes per revision | [`CHANGELOG.md`](CHANGELOG.md), with the hardware list of each revision |
 | Parts per set | [`parts.csv`](parts.csv) |
 | Fasteners and hardware | [`hardware.csv`](hardware.csv) |

@@ -13,7 +13,45 @@ flowchart LR
 | Rev | Onshape version | Microversion | State of | Used for |
 |---|---|---|---|---|
 | rev1 | `OpenFrame-3F rev1` | `f877e85425d535f6c880527f` | 2026-07-05 17:17 UTC | the first CNC sample frames, cut from these files |
-| rev2 | `OpenFrame-3F rev2` | `10c00d2f68e6027651b1b59e` | 2026-10-20 | the first production batch |
+| rev2 | `OpenFrame-3F rev2` | `10c00d2f68e6027651b1b59e` | 2026-10-20 | handoff package rev F; the first production batch is cut from rev F plus the unreleased changes below (package rev G) |
+
+## Unreleased (Onshape workspace 3", after rev2)
+
+Changed in the workspace on 2026-10-21 and sent as handoff package rev G. Not
+yet a named Onshape version: it becomes rev3, the state the first production
+batch is cut from.
+
+| Change from rev2 | Detail |
+|---|---|
+| Arm bolt | arm bolt hole and the four arm bolt / insert holes in the middle and bottom plates 1 mm further out (22.0 to 23.0 mm from the centre) |
+| Rear M3 inserts | the two rear M3 insert holes in the middle plate 0.5 mm further out each (x 7.5 to 8.0 mm), for edge clearance |
+
+Hole positions checked against the workspace on 2026-10-24 (FeatureScript
+query of every hole in Arm, Base-Top, Base-Bot and Top).
+
+Hardware spec (2026-10-24): every screw black-oxide alloy steel, class 12.9.
+M3 and M4 button heads ISO 7380-1, countersunk ISO 10642. ISO 7380 has no M2:
+M2 screws are ISO 4762 or a generic button head. Nylon patch on the arm, cross
+and camera side plate screws only; not on screws into TPU, not on the standoff
+screws (removed for maintenance), not on the two countersunk standoff screws.
+
+Model review, 2026-10-24 (to fix in Onshape before rev3 is released):
+
+| Item | Finding | Proposed |
+|---|---|---|
+| Arm and cross screws | M3x10 on a 1.5 mm washer: the tip reaches 1.9 mm into the 2.4 mm insert | M3x12 |
+| Rule for screws into threads | no check today | length = everything under the head + full insert length + 0.5 to 1.5 mm |
+| M2x10 | 8 of the 10 are prop screws mated to the props | exclude props, prop screws, motor screws and electronics from the BOM |
+| M3x6 | one instance has no mate | delete or mate |
+| McMaster flat head screws | 5 instances, no mates, not in the BOM | delete |
+| M3 inserts | 7 holes, 6 instances | add the 7th |
+| Insert model | the insert holes are drawn as Ø4.5 + Ø5.5 x 1.0 counterbores; no insert part number yet | model the chosen insert and size the holes from it |
+| M2 hardware called ISO 7380 | ISO 7380-1 covers M3 to M16 | ISO 4762 or generic button head |
+| M3x8 countersunk | no standard set in the model ("grade C") | ISO 10642 |
+| Stack nut | plain hex nut ISO 4032 | nylon lock nut ISO 10511 |
+| Counterbore for M2 button heads | Ø4.1 on the rev G drawing | about Ø4.3 |
+| Standoff part | named `20mmx4mm`, modelled with a plain Ø3 bore, marked CNC aluminium | rename to standoff M3 F-F 20 mm OD 5, model the thread, bought part |
+| Drawing in Onshape | gives H8 holes; rev G gives +0.03/0 and insert notes | bring the rev G notes into the Onshape drawing |
 
 ## rev2
 
