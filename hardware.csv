@@ -1,14 +1,14 @@
 item,standard,size,qty_per_set,notes
-Hex nut grade A & B M2x0.4,ISO 4032,M2,4,"from the Onshape assembly; stack, on top of the grommets. Proposed: nylon lock nut ISO 10511"
-Hex socket countersunk head screw M2x0.4 x 5,ISO 10642,M2x5,4,from the Onshape assembly; air unit into VTX-Mount (TPU)
-Hex socket head countersunk screw grade C M3x0.5 x 8,,M3x8,2,from the Onshape assembly; standoff bottoms through the middle plate. No standard set in the model: ISO 10642
-Hexagon Socket Button Head Screw With Collar STN EN ISO 7380-2 - M3 x 6 Steel 10.9 Chrome v1,ISO 7380-2,M3x6,1,from the Onshape assembly; bumper (Bumpr)
-m2 pressnut,,,4,from the Onshape assembly
-m3 pressnut,,,7,7 holes on the drawing; the Onshape assembly has 6 instances
-Socket button head screw M2x0.4 x 10,ISO 7380,M2x10,10,"from the Onshape assembly; 8 of the 10 are prop screws mated to the props, 2 are the camera pivots (Cam-Mount-L/R): the frame needs 2. ISO 7380 covers M3 and up, so M2 has no ISO button head"
-Socket button head screw M2x0.4 x 22,ISO 7380,M2x22,4,"from the Onshape assembly; stack, into the M2 inserts. ISO 7380 covers M3 and up: proposed ISO 4762"
-Socket button head screw M3x0.5 x 10,ISO 7380,M3x10,5,"from the Onshape assembly; 4 arms + 1 cross, each on a 1.5 mm washer: the tip reaches 1.9 mm into the 2.4 mm insert. Proposed M3x12 (tip 1.5 mm proud). Nylon patch"
-Socket button head screw M3x0.5 x 6,ISO 7380,M3x6,14,"from the Onshape assembly; 4 standoff tops, 2 standoff bottoms, 6 camera side plates (nylon patch), 1 xt30Mount, 1 more mated in rev3 (rev2 had it loose)"
-Socket button head screw M3x0.5 x 8,ISO 7380,M3x8,2,from the Onshape assembly; Airtag/Antenna-Mount (TPU)
-softmount m2,,,8,from the Onshape assembly
-Washer M3,,M3,5,from the Onshape assembly
+Socket button head screw M3x0.5 x 12,ISO 7380-1,M3x12,5,"arms + cross into the M3 inserts, on a washer. Steel class 12.9, black. Nylon patch"
+Socket button head screw M3x0.5 x 6,ISO 7380-1,M3x6,14,"4 standoff tops, 2 standoff bottoms, 6 camera side plates (nylon patch), 1 xt30Mount, 1 more. Steel class 12.9, black"
+Socket button head screw M3x0.5 x 8,ISO 7380-1,M3x8,2,"Airtag/Antenna-Mount (TPU). Steel class 12.9, black"
+Hex socket countersunk head screw M3x0.5 x 8,ISO 10642,M3x8,2,"standoff bottoms through the middle plate. Steel class 12.9, black"
+Hexagon Socket Button Head Screw With Collar STN EN ISO 7380-2 - M3 x 6 Steel 10.9 Chrome v1,ISO 7380-2,M3x6,1,bumper (Bumpr). Imported STEP body
+Hex socket head cap screw M2x0.40 x 20 x 16,ISO 4762,M2x20,4,"stack, through the M2 inserts, nut on top. Steel class 12.9, black"
+Prevailing torque nut thin M2x0.40,ISO 10511,M2,4,"stack, on top of the grommets. Nylon insert"
+Socket button head screw M2x0.4 x 10,ISO 7380 (Onshape library; ISO 7380-1 starts at M3),M2x10,10,"2 camera pivots (Cam-Mount-L/R); the other 8 are prop screws mated to the props, not frame hardware. Steel class 12.9, black"
+Hex socket countersunk head screw M2x0.4 x 5,ISO 10642,M2x5,4,"air unit into VTX-Mount (TPU). Steel class 12.9, black"
+m2 pressnut,,M2,4,"threaded insert, middle plate, fitted by the carbon supplier"
+m3 pressnut,,M3,7,"threaded insert, middle plate, fitted by the carbon supplier"
+Grommet M2,,M2,8,stack soft mount
+Washer M3,,M3,5,under the arm and cross screws; standard not set in the model

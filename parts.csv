@@ -1,5 +1,5 @@
 part,type,material,thickness_mm,qty_per_set,process,sku,onshape_part
-20mmx4mm,standoff,Aluminum,,4,CNC aluminium,,RABD
+Standoff M3 F-F 20 OD5,standoff,Aluminum,,4,"bought (7075 round, M3 F-F)",,RABD
 Airtag/Antenna-Mount,mount,PLA,,1,"3D print, TPU",,RrBD
 anti-slip pad,pad,,,1,moulded silicone,,RIDD
 Arm,arm,Carbon fiber epoxy (61%),4,4,CNC carbon plate,ACC-FRM-ARM-3,JHD
