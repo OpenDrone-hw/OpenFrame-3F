@@ -77,7 +77,7 @@ named version was made on 2026-10-24.
 | Printed parts | Boot-L/R (2 each) become bootFL, bootFR, bootRL, bootRR; one camera mount becomes Cam-Mount-L and Cam-Mount-R; anti-slip pad added |
 | Hardware in CAD | rev1 had no screws in the assembly; rev2 has them. The arm screw choice on the 3" was still open on 2026-10-09 |
 
-Hardware per set, rev2, from the Onshape assembly (7 M3 inserts is the hole count; the rev2 assembly places 6). This is the rev2 list; [`hardware.csv`](hardware.csv) follows rev2.2.
+Hardware per set, rev2, from the Onshape assembly (7 M3 inserts is the hole count; the rev2 assembly places 6). This is the rev2 list; [`bom.csv`](bom.csv) follows rev2.2.
 
 | Item | Standard | Qty |
 |---|---|---|

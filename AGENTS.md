@@ -13,7 +13,7 @@ mechanical repository template. Use the Onshape skill for any CAD work.
 | License | CERN-OHL-S-2.0 |
 
 - Never edit a file under `releases/`. Fix the model in Onshape and release a new revision.
-- A part added, removed or re-counted in the Onshape assembly changes `parts.csv` or `hardware.csv` in the same pull request.
+- A part added, removed or re-counted in the Onshape assembly changes `bom.csv` in the same pull request.
 - The 3" and 5" frames share one Part Studio in OpenDrone-V2; a change to a shared part affects both repositories.
 - Sourcing (suppliers, prices, quotes, RFQs, contacts) is handled by Incutec and never lives in OpenDrone repositories.
 - Contribution process: [CONTRIBUTING.md](CONTRIBUTING.md).
