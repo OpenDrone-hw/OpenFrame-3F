@@ -5,10 +5,9 @@ incutec OpenDrone line. The 3" and 5" frames are separate repositories:
 [OpenFrame-3F](https://github.com/OpenDrone-hw/OpenFrame-3F) and
 [OpenFrame-5F](https://github.com/OpenDrone-hw/OpenFrame-5F).
 
-<p>
-<img src="images/assembly.png" width="420" alt="OpenFrame-3F assembled, frame and hardware only, render" />
-<img src="images/exploded.png" width="420" alt="OpenFrame-3F exploded view, render" />
-</p>
+| Assembled | Exploded |
+|:---:|:---:|
+| <img src="images/assembly.png" width="100%" alt="OpenFrame-3F assembled, frame and hardware only, render" /> | <img src="images/exploded.png" width="100%" alt="OpenFrame-3F exploded view, render" /> |
 
 [![Status](https://img.shields.io/endpoint?url=https://opendrone.be/api/status/OpenFrame-3F.json)](https://github.com/OpenDrone-hw/.github/blob/main/CONTRIBUTING.md#the-life-of-a-project)
 
