@@ -34,9 +34,9 @@ follows rev3.
 
 Hardware spec (2026-10-24): every screw black-oxide alloy steel, class 12.9.
 M3 and M4 button heads ISO 7380-1, countersunk ISO 10642. ISO 7380 has no M2:
-M2 screws are ISO 4762 or a generic button head. Nylon patch on the arm, cross
-and camera side plate screws only; not on screws into TPU, not on the standoff
-screws (removed for maintenance), not on the two countersunk standoff screws.
+M2 screws are ISO 4762 or a generic button head. Nylon patch on the arm, cross,
+camera side plate and standoff screws; not on the two countersunk standoff
+screws, not on the stack screws, not on screws with TPU under the head.
 
 Model review, 2026-10-24. Fixes go into the Onshape branch `3in-fixes` (from rev3) and reach the workspace when it is merged. On the branch every standard frame screw is steel class 12.9 with finish Black (the motor screws stay stainless and are not frame hardware; the imported collar screw is 10.9); the mate errors are the 3 that rev3 already had (Fastened 4, Revolute 24, Parallel 17). `hardware.csv` and `parts.csv` on the matching git branch follow the Onshape branch.
 
