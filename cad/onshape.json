@@ -129,9 +129,9 @@
     },
     {
       "partStudio": "706f33d195388d882b65aa32",
-      "partId": "RcDD",
+      "partId": "RdDD",
       "name": "Bumpr",
-      "release": false
+      "release": true
     },
     {
       "partStudio": "706f33d195388d882b65aa32",
@@ -165,9 +165,9 @@
     },
     {
       "partStudio": "706f33d195388d882b65aa32",
-      "partId": "RNFD",
+      "partId": "ROFD",
       "name": "xt30Mount",
-      "release": false
+      "release": true
     },
     {
       "partStudio": "706f33d195388d882b65aa32",
