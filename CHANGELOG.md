@@ -32,7 +32,7 @@ Made by the founder as version `standardised and fixed` of the Onshape branch
 | Change from rev3 | Detail |
 |---|---|
 | Top plate | holes added for future GPS mounts (one field of about 14 x 8 mm) |
-| Camera side plates (Standoff-L/R) | one pocket 1 mm shallower: the wall was too thin |
+| Camera side plates (Standoff-L/R) | one M3 tap hole 1 mm shallower: the wall was too thin |
 | Arm and cross screws | ISO 7380-1 M3x10 on an M3 washer: the tip ends flush with the top of the 2.4 mm insert and 1.35 mm under the ESC. An M3x12 would reach 2 mm past the insert and touch the ESC parts |
 | Stack | ISO 4762 M2x18 with an ISO 10511 thin nylon lock nut on top (was a button head M2x22 and a plain hex nut). Uncompressed, the M2x18 tip ends 0.3 mm below the top of the nut; the rubber grommets compress when the stack is tightened, so the length stays (founder) |
 | Countersunk screws | ISO 10642 M3x8 into the front standoffs |
