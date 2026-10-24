@@ -13,7 +13,7 @@ incutec OpenDrone line. The 3" and 5" frames are separate repositories:
 [![Status](https://img.shields.io/endpoint?url=https://opendrone.be/api/status/OpenFrame-3F.json)](https://github.com/OpenDrone-hw/.github/blob/main/CONTRIBUTING.md#the-life-of-a-project)
 
 The CNC carbon parts, the CNC aluminium camera side plates and the bought
-hardware are final in rev4. The printed TPU parts are preliminary: they
+hardware are final in rev2.2. The printed TPU parts are preliminary: they
 fit the DJI O4 Pro only and will change to fit more video systems. They are
 printed by Incutec in black and PCB green. The aluminium camera side plates
 are anodised Pantone 7549 C (gold).
@@ -35,22 +35,22 @@ are anodised Pantone 7549 C (gold).
 
 ```mermaid
 flowchart LR
-  R0["rev1<br/>2026-07-05<br/>first CNC samples"] --> R1
+  R0["rev1<br/>2026-07-05<br/>first CNC samples, the only produced revision"] --> R1
   R1["rev2<br/>2026-10-20<br/>handoff package rev F"] --> R2
-  R2["rev3<br/>2026-10-21<br/>handoff package rev G, not exported"] --> R3
-  R3["rev4<br/>2026-10-24<br/>final CNC parts and hardware"]
+  R2["rev2.1<br/>2026-10-21<br/>handoff package rev G, not exported"] --> R3
+  R3["rev2.2<br/>2026-10-24<br/>final CNC parts and hardware, next production"]
 ```
 
 | Rev | Date | Used for | Files |
 |---|---|---|---|
-| rev1 | 2026-07-05 | first CNC samples | [`releases/rev1`](releases/rev1) |
+| rev1 | 2026-07-05 | first CNC samples, the only produced revision | [`releases/rev1`](releases/rev1) |
 | rev2 | 2026-10-20 | handoff package rev F | [`releases/rev2`](releases/rev2) |
-| rev3 | 2026-10-21 | handoff package rev G, not exported | named Onshape version only |
-| rev4 | 2026-10-24 | final CNC parts and hardware | [`releases/rev4`](releases/rev4) |
+| rev2.1 | 2026-10-21 | handoff package rev G, not exported | named Onshape version only |
+| rev2.2 | 2026-10-24 | final CNC parts and hardware, next production | [`releases/rev2.2`](releases/rev2.2) |
 
 Every revision is a named version in the Onshape document OpenDrone-V2, exported
 once to `releases/<rev>/` (STEP per part, drawing PDF, `manifest.json` with
-SHA-256 per file) and never edited. rev4 is the Onshape version
+SHA-256 per file) and never edited. rev2.2 is the Onshape version
 `standardised and fixed` of the branch `3in-fixes`. Changes per revision:
 [`CHANGELOG.md`](CHANGELOG.md).
 
@@ -64,7 +64,7 @@ SHA-256 per file) and never edited. rev4 is the Onshape version
 
 ## What is in a set
 
-From [`parts.csv`](parts.csv) (rev4). Materials are as set in the Onshape
+From [`parts.csv`](parts.csv) (rev2.2). Materials are as set in the Onshape
 model and blank where the model sets none (printed parts are marked PLA in the
 model and printed in TPU); the process column is not from the model.
 
@@ -163,9 +163,9 @@ Hardware per set as counted in the Onshape assembly ([`hardware.csv`](hardware.c
 | Grommet M2 |  | M2 | 8 |
 | Washer M3 |  | M3 | 5 |
 
-## Checks on rev4
+## Checks on rev2.2
 
-Run on the STEP export of rev4 on 2026-10-24: thread engagement and clearance
+Run on the STEP export of rev2.2 on 2026-10-24: thread engagement and clearance
 for every screw, and a geometry comparison of every CNC part with the previous
 revision (see [`CHANGELOG.md`](CHANGELOG.md)).
 

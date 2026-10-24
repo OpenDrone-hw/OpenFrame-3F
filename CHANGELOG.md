@@ -7,17 +7,19 @@ for every count below unless a row says otherwise.
 
 ```mermaid
 flowchart LR
-  R1["rev1<br/>2026-07-05<br/>first CNC samples"] --> R2["rev2<br/>2026-10-20<br/>handoff rev F"] --> R3["rev3<br/>2026-10-21<br/>handoff rev G"] --> R4["rev4<br/>2026-10-24<br/>final CNC and hardware"]
+  R1["rev1<br/>2026-07-05<br/>first CNC samples"] --> R2["rev2<br/>2026-10-20<br/>handoff rev F"] --> R3["rev2.1<br/>2026-10-21<br/>handoff rev G"] --> R4["rev2.2<br/>2026-10-24<br/>final CNC and hardware"]
 ```
 
 | Rev | Onshape version | Microversion | State of | Used for |
 |---|---|---|---|---|
 | rev1 | `OpenFrame-3F rev1` | `f877e85425d535f6c880527f` | 2026-07-05 17:17 UTC | the first CNC sample frames, cut from these files |
 | rev2 | `OpenFrame-3F rev2` | `10c00d2f68e6027651b1b59e` | 2026-10-20 | handoff package rev F |
-| rev3 | `OpenFrame-3F rev3` | `4a06467185d3153716c3c5bf` | 2026-10-21 (version made 2026-10-24) | handoff package rev G, quoted for the first production frame batch (not ordered on 2026-10-24). Not exported: rev4 supersedes it |
-| rev4 | `standardised and fixed` (branch `3in-fixes`) | `09d82dba2e04b77705035058` | 2026-10-24 10:50 UTC | final CNC carbon, CNC aluminium and bought hardware. [`releases/rev4/`](releases/rev4) |
+| rev2.1 | `OpenFrame-3F rev3` | `4a06467185d3153716c3c5bf` | 2026-10-21 (version made 2026-10-24) | handoff package rev G, quoted for the first production frame batch (not ordered on 2026-10-24). Not exported: rev2.2 supersedes it |
+| rev2.2 | `standardised and fixed` (branch `3in-fixes`) | `09d82dba2e04b77705035058` | 2026-10-24 10:50 UTC | final CNC carbon, CNC aluminium and bought hardware. [`releases/rev2.2/`](releases/rev2.2) |
 
-## rev4
+rev1 is the only revision produced so far. rev2.x is the next production: rev2 (handoff package rev F), rev2.1 (handoff package rev G; its Onshape version is named `OpenFrame-3F rev3`) and rev2.2, the final CNC parts and hardware. The 5" uses the same numbers, so a frame set has one revision.
+
+## rev2.2
 
 The final state of every CNC carbon part, both CNC aluminium camera side
 plates and the bought hardware (founder, 2026-10-24). The printed TPU parts
@@ -26,10 +28,10 @@ systems. Shipped TPU colours are black and PCB green, as in the CAD. The alumini
 camera side plates are anodised Pantone 7549 C (gold).
 
 Made by the founder as version `standardised and fixed` of the Onshape branch
-`3in-fixes` (from rev3). Geometry compared with rev3 / handoff package rev G
+`3in-fixes` (from rev2.1). Geometry compared with rev2.1 / handoff package rev G
 (STEP, 2026-10-24): arm, cross, middle plate and bottom plate unchanged.
 
-| Change from rev3 | Detail |
+| Change from rev2.1 | Detail |
 |---|---|
 | Top plate | holes added for future GPS mounts (one field of about 14 x 8 mm) |
 | Camera side plates (Standoff-L/R) | one M3 tap hole 1 mm shallower: the wall was too thin |
@@ -37,15 +39,15 @@ Made by the founder as version `standardised and fixed` of the Onshape branch
 | Stack | ISO 4762 M2x18 with an ISO 10511 thin nylon lock nut on top (was a button head M2x22 and a plain hex nut). Uncompressed, the M2x18 tip ends 0.3 mm below the top of the nut; the rubber grommets compress when the stack is tightened, so the length stays (founder) |
 | Countersunk screws | ISO 10642 M3x8 into the front standoffs |
 | Bumper | the two rear bottom side plate holes take an M3x6 without the bumper and an M3x8 with it; both are modelled and both ship |
-| M3 inserts | 7 placed (rev3 placed 6 of the 7 holes) |
+| M3 inserts | 7 placed (rev2.1 placed 6 of the 7 holes) |
 | Screw finish | every frame screw steel class 12.9, black. Nylon patch on the arm, cross, camera side plate and standoff screws; none on the countersunk and stack screws or on screws with TPU under the head |
 | Parts | `20mmx4mm` renamed `Standoff M3 F-F 20 OD5` (bought, 7075); `softmount m2` renamed `Grommet M2`; Part Studio `Insert M3 (provisional)` added, PEM KFS2-M3 values until the supplier's insert is measured |
 
-Checked on the rev4 STEP export (thread engagement and clearance per screw,
+Checked on the rev2.2 STEP export (thread engagement and clearance per screw,
 2026-10-24): every screw into an insert ends flush with the insert top; side
 plate screws get 3.5 to 4.5 mm of thread; no screw touches a board.
 
-Open after rev4:
+Open after rev2.2:
 
 | Item | State |
 |---|---|
@@ -54,7 +56,7 @@ Open after rev4:
 | Counterbore for M2 heads | Ø4.1 on the rev G drawing, about Ø4.3 proposed |
 | Insert | supplier insert type and part number open; the model uses PEM KFS2-M3 values |
 
-## rev3
+## rev2.1
 
 Changed in the workspace on 2026-10-21 and sent as handoff package rev G; the
 named version was made on 2026-10-24.
@@ -75,7 +77,7 @@ named version was made on 2026-10-24.
 | Printed parts | Boot-L/R (2 each) become bootFL, bootFR, bootRL, bootRR; one camera mount becomes Cam-Mount-L and Cam-Mount-R; anti-slip pad added |
 | Hardware in CAD | rev1 had no screws in the assembly; rev2 has them. The arm screw choice on the 3" was still open on 2026-10-09 |
 
-Hardware per set, rev2, from the Onshape assembly (7 M3 inserts is the hole count; the rev2 assembly places 6). This is the rev2 list; [`hardware.csv`](hardware.csv) follows rev4.
+Hardware per set, rev2, from the Onshape assembly (7 M3 inserts is the hole count; the rev2 assembly places 6). This is the rev2 list; [`hardware.csv`](hardware.csv) follows rev2.2.
 
 | Item | Standard | Qty |
 |---|---|---|
