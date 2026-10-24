@@ -12,6 +12,7 @@ mechanical repository template. Use the Onshape skill for any CAD work.
 | Release | `onshape_release.py cad/onshape.json --version <rev> --apply`, then one commit adding `releases/<rev>/` |
 | License | CERN-OHL-S-2.0 |
 
+- `images/` is generated, never edited by hand: `python3 <hardware-tooling>/hardware/frame_render/render.py . --step <assembly.step>` from the profile `cad/render.json` (the same images are the GitHub README and the shop product shots; `--shop <dir>` writes those).
 - Never edit a file under `releases/`. Fix the model in Onshape and release a new revision.
 - A part added, removed or re-counted in the Onshape assembly changes `bom.csv` in the same pull request.
 - The 3" and 5" frames share one Part Studio in OpenDrone-V2; a change to a shared part affects both repositories.

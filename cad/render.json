@@ -1,0 +1,392 @@
+{
+ "title": "OpenFrame 3″",
+ "views": {
+  "az": 35,
+  "el": 26,
+  "kit_el": 78
+ },
+ "explode": {
+  "gap": 18,
+  "slide": 16
+ },
+ "shop": {
+  "prefix": "openframe-3",
+  "background": "#EBE4DD"
+ },
+ "groups": [
+  {
+   "label": "Top plate",
+   "match": "^Top$",
+   "marker": "A",
+   "text": "Carbon top plate",
+   "tier": 6,
+   "row": 1,
+   "cls": "plate",
+   "finish": "carbon"
+  },
+  {
+   "label": "Middle plate",
+   "match": "^Base-Top$",
+   "marker": "B",
+   "text": "Carbon middle plate (inserts pressed in by the carbon supplier)",
+   "tier": 4,
+   "row": 1,
+   "cls": "plate",
+   "finish": "carbon"
+  },
+  {
+   "label": "Bottom plate",
+   "match": "^Base-Bot$",
+   "marker": "C",
+   "text": "Carbon bottom plate",
+   "tier": 1,
+   "row": 1,
+   "cls": "plate",
+   "finish": "carbon"
+  },
+  {
+   "label": "Arms",
+   "match": "^Arm$",
+   "marker": "D",
+   "text": "Carbon arm",
+   "tier": 2,
+   "row": 2,
+   "per_row": 2,
+   "cls": "plate",
+   "finish": "carbon",
+   "lay": "flat-x"
+  },
+  {
+   "label": "Cross",
+   "match": "^Cross$",
+   "marker": "E",
+   "text": "Carbon cross",
+   "tier": 2,
+   "row": 3,
+   "cls": "plate",
+   "finish": "carbon",
+   "lay": "flat"
+  },
+  {
+   "label": "Side plates",
+   "match": "^Standoff-[LR]$",
+   "marker": "F",
+   "text": "CNC aluminium camera side plates, gold anodised",
+   "cls": "body",
+   "finish": "alu",
+   "color": "#FBB600",
+   "roughness": 0.26,
+   "lay": "flat",
+   "tier": 3,
+   "row": 3
+  },
+  {
+   "label": "AirTag mount",
+   "match": "^Airtag/Antenna[- ][Mm]ount$",
+   "marker": "K",
+   "text": "TPU AirTag and antenna mount",
+   "cls": "body",
+   "finish": "tpu",
+   "color": "cad",
+   "tier": 0,
+   "row": 3
+  },
+  {
+   "label": "XT30 mount",
+   "match": "^xt30Mount$",
+   "marker": "M",
+   "text": "TPU XT30 mount",
+   "cls": "body",
+   "finish": "tpu",
+   "color": "#17181a",
+   "tier": 7,
+   "row": 3
+  },
+  {
+   "label": "Arm boots",
+   "match": "^(boot[FR][LR]|Boot-[LR])$",
+   "marker": "G",
+   "text": "TPU arm boot",
+   "cls": "body",
+   "finish": "tpu",
+   "color": "cad",
+   "tier": 0,
+   "row": 4,
+   "per_row": 4
+  },
+  {
+   "label": "Anti-slip pad",
+   "match": "^anti-slip pad$",
+   "marker": "N",
+   "text": "Silicone anti-slip battery pad",
+   "cls": "body",
+   "finish": "rubber",
+   "color": "#1d1e21",
+   "tier": 7,
+   "row": 3,
+   "lay": "flat-x"
+  },
+  {
+   "label": "Air unit mount",
+   "match": "^VTX-Mount$",
+   "marker": "H",
+   "text": "TPU air unit mount",
+   "cls": "body",
+   "finish": "tpu",
+   "color": "#17181a",
+   "tier": 5,
+   "row": 5
+  },
+  {
+   "label": "Camera soft mounts",
+   "match": "^Cam-Mount-[LR]$",
+   "marker": "J",
+   "text": "TPU camera soft mounts, left and right",
+   "cls": "body",
+   "finish": "tpu",
+   "color": "cad",
+   "tier": 3,
+   "row": 5,
+   "slide_to": "Side plates",
+   "mirror_missing": {
+    "pair": "^Standoff-[LR]$",
+    "name": "Cam-Mount-R"
+   }
+  },
+  {
+   "label": "Bumper",
+   "match": "^(Bumpr|Bumper)$",
+   "marker": "L",
+   "text": "TPU bumper",
+   "cls": "body",
+   "finish": "tpu",
+   "color": "cad",
+   "tier": 0,
+   "row": 5
+  },
+  {
+   "hardware": true,
+   "finish": "steel",
+   "color": "#2e3136",
+   "lay": "axis",
+   "kit_spares": 2,
+   "label": "M3x10",
+   "match": "^Socket button head screw M3x0\\.5 x 10$",
+   "marker": "1",
+   "ipn": "FAS-M3X10-BH-NP",
+   "text": "ISO 7380-1 M3x10",
+   "cls": "screw",
+   "row": 6,
+   "per_row": 7
+  },
+  {
+   "hardware": true,
+   "finish": "steel",
+   "color": "#2e3136",
+   "lay": "axis",
+   "kit_spares": 2,
+   "label": "M3x6",
+   "match": "^Socket button head screw M3x0\\.5 x 6$",
+   "marker": "2",
+   "ipn": "FAS-M3X6-BH-NP",
+   "text": "ISO 7380-1 M3x6",
+   "cls": "screw",
+   "row": 6,
+   "per_row": 8,
+   "coaxial_skip": "^Socket button head screw M3x0\\.5 x 8$"
+  },
+  {
+   "hardware": true,
+   "finish": "steel",
+   "color": "#2e3136",
+   "lay": "axis",
+   "kit_spares": 2,
+   "label": "M3x8",
+   "match": "^Socket button head screw M3x0\\.5 x 8$",
+   "marker": "3",
+   "ipn": "FAS-M3X8-BH",
+   "text": "ISO 7380-1 M3x8",
+   "cls": "screw",
+   "row": 6,
+   "per_row": 6
+  },
+  {
+   "hardware": true,
+   "finish": "steel",
+   "color": "#2e3136",
+   "lay": "axis",
+   "kit_spares": 2,
+   "label": "M3x8 countersunk",
+   "match": "^Hex socket countersunk head screw M3x0\\.5 x 8$",
+   "marker": "4",
+   "ipn": "FAS-M3X8-CSK",
+   "text": "ISO 10642 M3x8",
+   "cls": "screw",
+   "row": 7,
+   "per_row": 4
+  },
+  {
+   "hardware": true,
+   "finish": "steel",
+   "color": "#2e3136",
+   "lay": "axis",
+   "kit_spares": 2,
+   "label": "M2x18",
+   "match": "^Hex socket head cap screw M2x0\\.40 x 18$",
+   "marker": "5",
+   "ipn": "FAS-M2X18-SHCS",
+   "text": "ISO 4762 M2x18",
+   "cls": "screw",
+   "row": 7,
+   "per_row": 6
+  },
+  {
+   "hardware": true,
+   "finish": "steel",
+   "color": "#2e3136",
+   "lay": "axis",
+   "kit_spares": 2,
+   "label": "M2x10",
+   "match": "^Socket button head screw M2x0\\.4 x 10$",
+   "marker": "6",
+   "ipn": "FAS-M2X10-BH",
+   "text": "M2x10 button head, camera pivot",
+   "cls": "screw",
+   "row": 7,
+   "per_row": 4,
+   "horizontal": true
+  },
+  {
+   "hardware": true,
+   "finish": "steel",
+   "color": "#2e3136",
+   "lay": "axis",
+   "kit_spares": 2,
+   "label": "M2x5 countersunk",
+   "match": "^Hex socket countersunk head screw M2x0\\.4 x 5$",
+   "marker": "7",
+   "ipn": "FAS-M2X5-CSK",
+   "text": "ISO 10642 M2x5",
+   "cls": "screw",
+   "row": 7,
+   "per_row": 6
+  },
+  {
+   "hardware": true,
+   "finish": "steel",
+   "color": "#2e3136",
+   "lay": "flat",
+   "kit_spares": 2,
+   "label": "M2 nylon lock nut",
+   "match": "^Prevailing torque nut thin M2x0\\.40$",
+   "marker": "8",
+   "ipn": "FAS-NUT-M2-NYL",
+   "text": "ISO 10511 thin nylon lock nut M2",
+   "cls": "nut",
+   "tier": 5,
+   "row": 8,
+   "per_row": 6
+  },
+  {
+   "hardware": true,
+   "finish": "steel",
+   "color": "#aeb3ba",
+   "lay": "flat",
+   "kit_spares": 0,
+   "label": "M3 washer",
+   "match": "^Washer M3$",
+   "marker": "9",
+   "ipn": "FAS-WSH-M3",
+   "text": "M3 washer",
+   "cls": "washer",
+   "row": 8,
+   "per_row": 5
+  },
+  {
+   "hardware": true,
+   "finish": "rubber",
+   "color": "#141517",
+   "lay": "upright",
+   "kit_spares": 0,
+   "label": "M2 grommet",
+   "match": "^Grommet M2$",
+   "marker": "10",
+   "ipn": "GRM-M2-SIL50",
+   "text": "Silicone grommet M2",
+   "cls": "grommet",
+   "tier": 5,
+   "row": 8,
+   "per_row": 4
+  },
+  {
+   "hardware": true,
+   "finish": "alu",
+   "color": "#b4b8bf",
+   "lay": "axis",
+   "kit_spares": 0,
+   "roughness": 0.4,
+   "label": "Standoff",
+   "match": "^Standoff M3 F-F 20 OD5$",
+   "marker": "11",
+   "ipn": "FRM-SO-3-20",
+   "text": "Standoff M3 F-F 20 mm, OD 5, aluminium",
+   "cls": "standoff",
+   "tier": 5,
+   "row": 8,
+   "per_row": 4
+  },
+  {
+   "label": "M3 insert",
+   "match": "^m3 pressnut$",
+   "cls": "insert",
+   "finish": "zinc",
+   "color": "#c3c8cf",
+   "follow": "carbon",
+   "kit": false
+  },
+  {
+   "label": "M2 insert",
+   "match": "^m2 pressnut$",
+   "cls": "insert",
+   "finish": "zinc",
+   "color": "#c3c8cf",
+   "follow": "carbon",
+   "kit": false
+  }
+ ],
+ "spares": [
+  {
+   "ipn": "ACC-FRM-ARM-3",
+   "match": "^Arm$",
+   "count": 1
+  },
+  {
+   "ipn": "ACC-FRM-TOP-3",
+   "match": "^Top$"
+  },
+  {
+   "ipn": "ACC-FRM-MID-3",
+   "match": "^Base-Top$"
+  },
+  {
+   "ipn": "ACC-FRM-BOT-3",
+   "match": "^Base-Bot$"
+  },
+  {
+   "ipn": "ACC-FRM-CROSS-3",
+   "match": "^Cross$"
+  },
+  {
+   "ipn": "ACC-FRM-CAM-3",
+   "match": "^Standoff-[LR]$"
+  },
+  {
+   "ipn": "ACC-FRM-HW-3",
+   "hardware": true
+  },
+  {
+   "ipn": "ACC-FRM-PAD",
+   "match": "^anti-slip pad$"
+  }
+ ]
+}
