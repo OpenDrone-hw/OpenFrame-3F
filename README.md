@@ -15,7 +15,8 @@ incutec OpenDrone line. The 3" and 5" frames are separate repositories:
 The CNC carbon parts, the CNC aluminium camera side plates and the bought
 hardware are final in rev4. The printed TPU parts are preliminary: they
 fit the DJI O4 Pro only and will change to fit more video systems. They are
-printed by Incutec in black and PCB green.
+printed by Incutec in black and PCB green. The aluminium camera side plates
+are anodised Pantone 7549 C (gold).
 
 ## At a glance
 
@@ -135,7 +136,7 @@ The bumper holes get an M3x6 without the bumper and an M3x8 with it; both ship.
 | `FAS-M3X6-BH-NP` | ISO 7380-1 M3x6 | yes | 14 | 16 | camera side plates, standoff ends, XT30 mount |
 | `FAS-M3X8-BH` | ISO 7380-1 M3x8 | no | 4 | 6 | AirTag/antenna mount, bumper option |
 | `FAS-M3X8-CSK` | ISO 10642 M3x8 | no | 2 | 4 | front standoff bottoms |
-| `FAS-M2X18-SHCS` | ISO 4762 M2x18 (M2x20 proposed) | no | 4 | 6 | stack |
+| `FAS-M2X18-SHCS` | ISO 4762 M2x18 | no | 4 | 6 | stack |
 | `FAS-M2X10-BH` | M2x10 button head | no | 2 | 4 | camera pivots |
 | `FAS-M2X5-CSK` | ISO 10642 M2x5 | no | 4 | 6 | air unit |
 | `FAS-NUT-M2-NYL` | ISO 10511 thin nylon lock nut M2 |  | 4 | 6 | stack |
@@ -172,7 +173,7 @@ revision (see [`CHANGELOG.md`](CHANGELOG.md)).
 |---|---|
 | Screws into inserts | arm and cross M3x10 end flush with the 2.4 mm insert, 1.35 mm under the ESC |
 | Side plate screws | 3.5 to 4.5 mm of thread |
-| Stack | M2x18 ends 0.3 mm below the top of the nylon lock nut: M2x20 proposed |
+| Stack | M2x18 with a thin nylon lock nut: 2.5 mm in the nut before the grommets are compressed; the grommets compress when tightened, so the tip reaches through the nylon ring |
 | Duplicates | none (the bumper M3x6 / M3x8 pair is the deliberate option) |
 
 ## Key dimensions

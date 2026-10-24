@@ -22,7 +22,8 @@ flowchart LR
 The final state of every CNC carbon part, both CNC aluminium camera side
 plates and the bought hardware (founder, 2026-10-24). The printed TPU parts
 are preliminary: they fit the DJI O4 Pro only and will change for more video
-systems. Shipped TPU colours are black and PCB green, as in the CAD.
+systems. Shipped TPU colours are black and PCB green, as in the CAD. The aluminium
+camera side plates are anodised Pantone 7549 C (gold).
 
 Made by the founder as version `standardised and fixed` of the Onshape branch
 `3in-fixes` (from rev3). Geometry compared with rev3 / handoff package rev G
@@ -33,7 +34,7 @@ Made by the founder as version `standardised and fixed` of the Onshape branch
 | Top plate | holes added for future GPS mounts (one field of about 14 x 8 mm) |
 | Camera side plates (Standoff-L/R) | one pocket 1 mm shallower: the wall was too thin |
 | Arm and cross screws | ISO 7380-1 M3x10 on an M3 washer: the tip ends flush with the top of the 2.4 mm insert and 1.35 mm under the ESC. An M3x12 would reach 2 mm past the insert and touch the ESC parts |
-| Stack | ISO 4762 M2x18 with an ISO 10511 thin nylon lock nut on top (was a button head M2x22 and a plain hex nut). The M2x18 tip stops 0.3 mm below the top of the nut, so the nylon ring does not grip: M2x20 proposed, 2.5 mm under the top plate |
+| Stack | ISO 4762 M2x18 with an ISO 10511 thin nylon lock nut on top (was a button head M2x22 and a plain hex nut). Uncompressed, the M2x18 tip ends 0.3 mm below the top of the nut; the rubber grommets compress when the stack is tightened, so the length stays (founder) |
 | Countersunk screws | ISO 10642 M3x8 into the front standoffs |
 | Bumper | the two rear bottom side plate holes take an M3x6 without the bumper and an M3x8 with it; both are modelled and both ship |
 | M3 inserts | 7 placed (rev3 placed 6 of the 7 holes) |
@@ -48,7 +49,6 @@ Open after rev4:
 
 | Item | State |
 |---|---|
-| Stack screw length | M2x18 in the CAD, M2x20 proposed (nylon nut) |
 | Washer M3 | material and size not specified (A2 stainless in the model) |
 | Drawing in Onshape | gives H8 holes; rev G gives +0.03/0 and the insert notes |
 | Counterbore for M2 heads | Ø4.1 on the rev G drawing, about Ø4.3 proposed |
