@@ -10,7 +10,7 @@
     },
     {
       "path": "step/Base-Top.step",
-      "sha256": "f4ecefec57348067aa311440968b3ac7ef24cdfe6cfc45690fd8fb77235a2af7"
+      "sha256": "a8b92a984d04a8b57c3352a46690f537ee70fe191761fcf22be60486c4437d24"
     },
     {
       "path": "step/Base-Bot.step",
@@ -22,7 +22,7 @@
     },
     {
       "path": "step/Standoff-L.step",
-      "sha256": "cc92c07eefe81ed5393733ff662d8fd2e5ef8e3f217a6a9bf82d4b1b88fc31fa"
+      "sha256": "413dee631f121344e6fc017cdd333d2e4402c231779abf73404096bd41f129d5"
     },
     {
       "path": "step/Standoff-M3-F-F-20-OD5.step",
@@ -30,7 +30,7 @@
     },
     {
       "path": "step/Standoff-R.step",
-      "sha256": "702d7baacdc91f7577fa3ff09105f53ecfdf7d99fb72146e0286e5a4587647f0"
+      "sha256": "e5cccc2e1e33d7395594e333f3f98b4b7de00f4801249fcd106df890e05e5b82"
     },
     {
       "path": "step/VTX-Mount.step",
@@ -70,7 +70,7 @@
     },
     {
       "path": "drawings/Drawing-1.pdf",
-      "sha256": "d6c0bc5df8deb845049dc3f92ce113c2024664ee8a2885f16f62d3bedfcc5f8d"
+      "sha256": "7b0aa01e20f0610db6941d03ccf055a1f02eb909e388e366e6daaeb535da63f6"
     },
     {
       "path": "step/Bumpr.step",
@@ -91,12 +91,12 @@
     "name": "3in-fixes"
   },
   "version": {
-    "id": "f3d95fa697d50ef2745d320c",
-    "name": "standardised and fixed",
-    "created": "2026-10-24T10:50Z",
+    "id": "dd9b3795b948f799ff588934",
+    "name": "OpenFrame-3F rev2.2",
+    "created": "2026-10-24T21:00Z",
     "label": "rev2.2"
   },
-  "microversion": "09d82dba2e04b77705035058",
+  "microversion": "d3a1ba9f07ca7f5779171cfa",
   "elements": [
     {
       "id": "706f33d195388d882b65aa32",
@@ -245,6 +245,7 @@
       "path": "step/xt30Mount.step"
     }
   ],
-  "exported_at": "2026-10-24T11:13:00Z",
-  "tool": "onshape_release.py manifest format; exported through the browser session (Onshape API key over quota), founder-made version"
+  "exported_at": "2026-10-24T21:05:00Z",
+  "tool": "onshape_release.py manifest format; exported through the browser session (Onshape API key over quota), founder-made version",
+  "note": "Re-released 2026-10-24 evening from version OpenFrame-3F rev2.2: middle-plate nut holes for catalogue self-clinching nuts (M2/M3 4.22, M3 seat 6.7 x 1.55) and camera-mount hole depths; Base-Top, Standoff-L, Standoff-R and the drawing PDF are exported from this version; the other STEP files are the earlier rev2.2 export, checked geometrically identical to this version (boolean difference 0)."
 }
