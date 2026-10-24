@@ -1,0 +1,250 @@
+{
+  "files": [
+    {
+      "path": "step/Arm.step",
+      "sha256": "ff4cb85d0089e8ca021876a00ed3b6d1a4095ead57e3c62a527c67c922a021de"
+    },
+    {
+      "path": "step/Cross.step",
+      "sha256": "c0d1ef8d7f8edde70680d3a62d7210f9158a4853876f72467ddd137059a809c3"
+    },
+    {
+      "path": "step/Base-Top.step",
+      "sha256": "f4ecefec57348067aa311440968b3ac7ef24cdfe6cfc45690fd8fb77235a2af7"
+    },
+    {
+      "path": "step/Base-Bot.step",
+      "sha256": "889d572318d90c40b48ac2f5361e09166654b191d0a0b5b7c795703ddb1c35c8"
+    },
+    {
+      "path": "step/Top.step",
+      "sha256": "87666bc3c06e0d9ed50ceca87960ebf838ee5354fcdb9cfd59a67f704c35be04"
+    },
+    {
+      "path": "step/Standoff-L.step",
+      "sha256": "cc92c07eefe81ed5393733ff662d8fd2e5ef8e3f217a6a9bf82d4b1b88fc31fa"
+    },
+    {
+      "path": "step/Standoff-M3-F-F-20-OD5.step",
+      "sha256": "d8aaa788415622eb196d6a6cc0f2515c4486f31a19421ce518732d08d730f049"
+    },
+    {
+      "path": "step/Standoff-R.step",
+      "sha256": "702d7baacdc91f7577fa3ff09105f53ecfdf7d99fb72146e0286e5a4587647f0"
+    },
+    {
+      "path": "step/VTX-Mount.step",
+      "sha256": "607c4ed339e64823df0309a8cd6249278a5252a9b67590633d08c2778fc6dfec"
+    },
+    {
+      "path": "step/Airtag-Antenna-Mount.step",
+      "sha256": "c6e370a3e1742fe8c0fc61f922a78319bbba8633b6bf95fd83186134e66b9a1d"
+    },
+    {
+      "path": "step/Cam-Mount-L.step",
+      "sha256": "e54b5ac511e305b00f69cd6fdf7cf20d45074417dd293d8c8ed893fc6132e11e"
+    },
+    {
+      "path": "step/Cam-Mount-R.step",
+      "sha256": "a70020c72a45b155a8de5fc11910a2f297e3958e29d47a9e1f2a58ddd7a3703b"
+    },
+    {
+      "path": "step/anti-slip-pad.step",
+      "sha256": "412825d1998029b0b512284e41ce6cc24afb8cb63ef36827222ff2109a33794c"
+    },
+    {
+      "path": "step/bootFL.step",
+      "sha256": "37b0515a96ee8817f86992eee70fea8536786e10b089e9f5753be4d1366b36d0"
+    },
+    {
+      "path": "step/bootFR.step",
+      "sha256": "8053f4106ca4fdf8ca51cb57b7305c79183dc5dd204ec8ed8060105175ab4b31"
+    },
+    {
+      "path": "step/bootRL.step",
+      "sha256": "29a4cf33aff17c56cdad70a920f69c0c3c9605df079802bae59a6b06dd208bdf"
+    },
+    {
+      "path": "step/bootRR.step",
+      "sha256": "062b315d73000fbc48fc9fddaba8fa83ba686ec000c47122f3e045e199b45e05"
+    },
+    {
+      "path": "drawings/Drawing-1.pdf",
+      "sha256": "d6c0bc5df8deb845049dc3f92ce113c2024664ee8a2885f16f62d3bedfcc5f8d"
+    },
+    {
+      "path": "step/Bumpr.step",
+      "sha256": "a103a8c699f38d64dfacae99a5aa0dffe8f5cc3763bb317912455eded50a9b38"
+    },
+    {
+      "path": "step/xt30Mount.step",
+      "sha256": "2c8e290e159eb2fd2c0cee9e1f68b9e4aaf48118ccc8fd9e2acbb3b9c73c5c89"
+    }
+  ],
+  "document": {
+    "id": "78e093d02798373a79bc68d0",
+    "name": "OpenDrone-V2",
+    "url": "https://cad.onshape.com/documents/78e093d02798373a79bc68d0/w/0fcddf153f58a0417231386c"
+  },
+  "workspace": {
+    "id": "78ed7deb47b3c7fe2045ef2c",
+    "name": "3in-fixes"
+  },
+  "version": {
+    "id": "f3d95fa697d50ef2745d320c",
+    "name": "standardised and fixed",
+    "created": "2026-10-24T10:50Z",
+    "label": "rev2.2"
+  },
+  "microversion": "09d82dba2e04b77705035058",
+  "elements": [
+    {
+      "id": "706f33d195388d882b65aa32",
+      "name": "frame",
+      "type": "PARTSTUDIO"
+    },
+    {
+      "id": "311a9ccaf4570ac11afc63e4",
+      "name": "pressnuts",
+      "type": "PARTSTUDIO"
+    },
+    {
+      "id": "56ce93b60ab3c76a7958d3b0",
+      "name": "Softmount",
+      "type": "PARTSTUDIO"
+    },
+    {
+      "id": "263210d35ab9306f98754046",
+      "name": "Washer",
+      "type": "PARTSTUDIO"
+    },
+    {
+      "id": "fce8fc1bdf426e13532126f3",
+      "name": "OpenDrone-3",
+      "type": "ASSEMBLY"
+    },
+    {
+      "id": "248e177ed0d9d8fc9c2803c2",
+      "name": "Drawing 1",
+      "type": "DRAWING"
+    }
+  ],
+  "parts": [
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "JHD",
+      "name": "Arm",
+      "path": "step/Arm.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "JHH",
+      "name": "Cross",
+      "path": "step/Cross.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "JKD",
+      "name": "Base-Top",
+      "path": "step/Base-Top.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "JND",
+      "name": "Base-Bot",
+      "path": "step/Base-Bot.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "JQD",
+      "name": "Top",
+      "path": "step/Top.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "JuD",
+      "name": "Standoff-L",
+      "path": "step/Standoff-L.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "RABD",
+      "name": "Standoff M3 F-F 20 OD5",
+      "path": "step/Standoff-M3-F-F-20-OD5.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "RBBD",
+      "name": "Standoff-R",
+      "path": "step/Standoff-R.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "REBH",
+      "name": "VTX-Mount",
+      "path": "step/VTX-Mount.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "RrBD",
+      "name": "Airtag/Antenna-Mount",
+      "path": "step/Airtag-Antenna-Mount.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "R/CD",
+      "name": "Cam-Mount-L",
+      "path": "step/Cam-Mount-L.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "RDDD",
+      "name": "Cam-Mount-R",
+      "path": "step/Cam-Mount-R.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "RIDD",
+      "name": "anti-slip pad",
+      "path": "step/anti-slip-pad.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "R8CD",
+      "name": "bootFL",
+      "path": "step/bootFL.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "REDH",
+      "name": "bootFR",
+      "path": "step/bootFR.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "RpCD",
+      "name": "bootRL",
+      "path": "step/bootRL.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "REDD",
+      "name": "bootRR",
+      "path": "step/bootRR.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "RdDD",
+      "name": "Bumpr",
+      "path": "step/Bumpr.step"
+    },
+    {
+      "partStudio": "706f33d195388d882b65aa32",
+      "partId": "ROFD",
+      "name": "xt30Mount",
+      "path": "step/xt30Mount.step"
+    }
+  ],
+  "exported_at": "2026-10-24T11:13:00Z",
+  "tool": "onshape_release.py manifest format; exported through the browser session (Onshape API key over quota), founder-made version"
+}

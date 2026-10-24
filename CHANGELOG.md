@@ -7,54 +7,64 @@ for every count below unless a row says otherwise.
 
 ```mermaid
 flowchart LR
-  R1["rev1<br/>2026-07-05<br/>first CNC samples"] --> R2["rev2<br/>2026-10-20<br/>first production batch"]
+  R1["rev1<br/>2026-07-05<br/>first CNC samples"] --> R2["rev2<br/>2026-10-20<br/>handoff rev F"] --> R3["rev2.1<br/>2026-10-21<br/>handoff rev G"] --> R4["rev2.2<br/>2026-10-24<br/>final CNC and hardware"]
 ```
 
 | Rev | Onshape version | Microversion | State of | Used for |
 |---|---|---|---|---|
 | rev1 | `OpenFrame-3F rev1` | `f877e85425d535f6c880527f` | 2026-07-05 17:17 UTC | the first CNC sample frames, cut from these files |
 | rev2 | `OpenFrame-3F rev2` | `10c00d2f68e6027651b1b59e` | 2026-10-20 | handoff package rev F |
-| rev3 | `OpenFrame-3F rev3` | `4a06467185d3153716c3c5bf` | 2026-10-21 (version made 2026-10-24) | handoff package rev G, the first production batch. `releases/rev3/` not exported yet |
+| rev2.1 | `OpenFrame-3F rev3` | `4a06467185d3153716c3c5bf` | 2026-10-21 (version made 2026-10-24) | handoff package rev G, quoted for the first production frame batch (not ordered on 2026-10-24). Not exported: rev2.2 supersedes it |
+| rev2.2 | `standardised and fixed` (branch `3in-fixes`) | `09d82dba2e04b77705035058` | 2026-10-24 10:50 UTC | final CNC carbon, CNC aluminium and bought hardware. [`releases/rev2.2/`](releases/rev2.2) |
 
-## rev3
+rev1 is the only revision produced so far. rev2.x is the next production: rev2 (handoff package rev F), rev2.1 (handoff package rev G; its Onshape version is named `OpenFrame-3F rev3`) and rev2.2, the final CNC parts and hardware. The 5" uses the same numbers, so a frame set has one revision.
+
+## rev2.2
+
+The final state of every CNC carbon part, both CNC aluminium camera side
+plates and the bought hardware (founder, 2026-10-24). The printed TPU parts
+are preliminary: they fit the DJI O4 Pro only and will change for more video
+systems. Shipped TPU colours are black and PCB green, as in the CAD. The aluminium
+camera side plates are anodised Pantone 7549 C (gold).
+
+Made by the founder as version `standardised and fixed` of the Onshape branch
+`3in-fixes` (from rev2.1). Geometry compared with rev2.1 / handoff package rev G
+(STEP, 2026-10-24): arm, cross, middle plate and bottom plate unchanged.
+
+| Change from rev2.1 | Detail |
+|---|---|
+| Top plate | holes added for future GPS mounts (one field of about 14 x 8 mm) |
+| Camera side plates (Standoff-L/R) | one M3 tap hole 1 mm shallower: the wall was too thin |
+| Arm and cross screws | ISO 7380-1 M3x10 on an M3 washer: the tip ends flush with the top of the 2.4 mm insert and 1.35 mm under the ESC. An M3x12 would reach 2 mm past the insert and touch the ESC parts |
+| Stack | ISO 4762 M2x18 with an ISO 10511 thin nylon lock nut on top (was a button head M2x22 and a plain hex nut). Uncompressed, the M2x18 tip ends 0.3 mm below the top of the nut; the rubber grommets compress when the stack is tightened, so the length stays (founder) |
+| Countersunk screws | ISO 10642 M3x8 into the front standoffs |
+| Bumper | the two rear bottom side plate holes take an M3x6 without the bumper and an M3x8 with it; both are modelled and both ship |
+| M3 inserts | 7 placed (rev2.1 placed 6 of the 7 holes) |
+| Screw finish | every frame screw steel class 12.9, black. Nylon patch on the arm, cross, camera side plate and standoff screws; none on the countersunk and stack screws or on screws with TPU under the head |
+| Parts | `20mmx4mm` renamed `Standoff M3 F-F 20 OD5` (bought, 7075); `softmount m2` renamed `Grommet M2`; Part Studio `Insert M3 (provisional)` added, PEM KFS2-M3 values until the supplier's insert is measured |
+
+Checked on the rev2.2 STEP export (thread engagement and clearance per screw,
+2026-10-24): every screw into an insert ends flush with the insert top; side
+plate screws get 3.5 to 4.5 mm of thread; no screw touches a board.
+
+Open after rev2.2:
+
+| Item | State |
+|---|---|
+| Washer M3 | material and size not specified (A2 stainless in the model) |
+| Drawing in Onshape | gives H8 holes; rev G gives +0.03/0 and the insert notes |
+| Counterbore for M2 heads | Ø4.1 on the rev G drawing, about Ø4.3 proposed |
+| Insert | supplier insert type and part number open; the model uses PEM KFS2-M3 values |
+
+## rev2.1
 
 Changed in the workspace on 2026-10-21 and sent as handoff package rev G; the
-named version was made on 2026-10-24. The first production batch is cut from
-rev3. The STEP and drawing export (`releases/rev3/`) is still to do.
+named version was made on 2026-10-24.
 
 | Change from rev2 | Detail |
 |---|---|
 | Arm bolt | arm bolt hole and the four arm bolt / insert holes in the middle and bottom plates 1 mm further out (22.0 to 23.0 mm from the centre) |
 | Rear M3 inserts | the two rear M3 insert holes in the middle plate 0.5 mm further out each (x 7.5 to 8.0 mm), for edge clearance |
-
-Hole positions checked against the workspace on 2026-10-24 (FeatureScript
-query of every hole in Arm, Base-Top, Base-Bot and Top). The rev G edits
-re-numbered 17 part ids (standoff, side plates, printed parts); the link file
-follows rev3.
-
-Hardware spec (2026-10-24): every screw black-oxide alloy steel, class 12.9.
-M3 and M4 button heads ISO 7380-1, countersunk ISO 10642. ISO 7380 has no M2:
-M2 screws are ISO 4762 or a generic button head. Nylon patch on the arm, cross
-and camera side plate screws only; not on screws into TPU, not on the standoff
-screws (removed for maintenance), not on the two countersunk standoff screws.
-
-Model review, 2026-10-24. Fixes go into the Onshape branch `3in-fixes` (from rev3) and reach the workspace when it is merged:
-
-| Item | Finding | Proposed | Branch `3in-fixes` |
-|---|---|---|---|
-| Arm and cross screws | M3x10 on a 1.5 mm washer: the tip reaches 1.9 mm into the 2.4 mm insert | M3x12 | done, mates kept |
-| Rule for screws into threads | no check today | length = everything under the head + full insert length + 0.5 to 1.5 mm | open |
-| M2x10 | 8 of the 10 are prop screws mated to the props | exclude props, prop screws, motor screws and electronics from the BOM | open |
-| M3x6 | rev2 had one with no mate; in rev3 all 14 are mated | none | n/a |
-| McMaster flat head screws | 5 instances, part of the DJI O4 Pro reference subassembly, not frame hardware | keep; leave out of the BOM | n/a |
-| M3 inserts | 7 holes, 6 instances | add the 7th | open |
-| Insert model | the insert holes are drawn as Ø4.5 + Ø5.5 x 1.0 counterbores; no insert part number yet | model the chosen insert and size the holes from it | Part Studio `Insert M3 (provisional)`: PEM KFS2-M3 values as variables, to replace with the measured sample |
-| M2 hardware called ISO 7380 | ISO 7380-1 covers M3 to M16 | ISO 4762 or generic button head | open |
-| M3x8 countersunk | no standard set in the model ("grade C") | ISO 10642 | open |
-| Stack nut | plain hex nut ISO 4032 | nylon lock nut ISO 10511 | open |
-| Counterbore for M2 button heads | Ø4.1 on the rev G drawing | about Ø4.3 | open |
-| Standoff part | named `20mmx4mm`, modelled with a plain Ø3 bore, marked CNC aluminium | rename to standoff M3 F-F 20 mm OD 5, model the thread, bought part | renamed `Standoff M3 F-F 20 OD5`; thread not modelled |
-| Drawing in Onshape | gives H8 holes; rev G gives +0.03/0 and insert notes | bring the rev G notes into the Onshape drawing | open |
 
 ## rev2
 
@@ -67,7 +77,7 @@ Model review, 2026-10-24. Fixes go into the Onshape branch `3in-fixes` (from rev
 | Printed parts | Boot-L/R (2 each) become bootFL, bootFR, bootRL, bootRR; one camera mount becomes Cam-Mount-L and Cam-Mount-R; anti-slip pad added |
 | Hardware in CAD | rev1 had no screws in the assembly; rev2 has them. The arm screw choice on the 3" was still open on 2026-10-09 |
 
-Hardware per set, rev2, from the Onshape assembly. This list is the same as [`hardware.csv`](hardware.csv).
+Hardware per set, rev2, from the Onshape assembly (7 M3 inserts is the hole count; the rev2 assembly places 6). This is the rev2 list; [`bom.csv`](bom.csv) follows rev2.2.
 
 | Item | Standard | Qty |
 |---|---|---|
