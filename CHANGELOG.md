@@ -7,20 +7,20 @@ for every count below unless a row says otherwise.
 
 ```mermaid
 flowchart LR
-  R1["rev1<br/>2026-07-05<br/>first CNC samples"] --> R2["rev2<br/>2026-10-20<br/>first production batch"]
+  R1["rev1<br/>2026-07-05<br/>first CNC samples"] --> R2["rev2<br/>2026-10-20<br/>handoff rev F"] --> R3["rev3<br/>2026-10-21<br/>handoff rev G"]
 ```
 
 | Rev | Onshape version | Microversion | State of | Used for |
 |---|---|---|---|---|
 | rev1 | `OpenFrame-3F rev1` | `f877e85425d535f6c880527f` | 2026-07-05 17:17 UTC | the first CNC sample frames, cut from these files |
 | rev2 | `OpenFrame-3F rev2` | `10c00d2f68e6027651b1b59e` | 2026-10-20 | handoff package rev F |
-| rev3 | `OpenFrame-3F rev3` | `4a06467185d3153716c3c5bf` | 2026-10-21 (version made 2026-10-24) | handoff package rev G, the first production batch. `releases/rev3/` not exported yet |
+| rev3 | `OpenFrame-3F rev3` | `4a06467185d3153716c3c5bf` | 2026-10-21 (version made 2026-10-24) | handoff package rev G, quoted for the first production frame batch (not ordered on 2026-10-24). `releases/rev3/` not exported yet |
 
 ## rev3
 
 Changed in the workspace on 2026-10-21 and sent as handoff package rev G; the
-named version was made on 2026-10-24. The first production batch is cut from
-rev3. The STEP and drawing export (`releases/rev3/`) is still to do.
+named version was made on 2026-10-24. rev3 is the version quoted for the first
+production frame batch. The STEP and drawing export (`releases/rev3/`) is still to do.
 
 | Change from rev2 | Detail |
 |---|---|
@@ -38,14 +38,14 @@ M2 screws are ISO 4762 or a generic button head. Nylon patch on the arm, cross
 and camera side plate screws only; not on screws into TPU, not on the standoff
 screws (removed for maintenance), not on the two countersunk standoff screws.
 
-Model review, 2026-10-24. Fixes go into the Onshape branch `3in-fixes` (from rev3) and reach the workspace when it is merged. On the branch every standard screw is steel class 12.9, black finish; the mate errors are the 3 that rev3 already had (Fastened 4, Revolute 24, Parallel 17). `hardware.csv` and `parts.csv` on the matching git branch follow the Onshape branch.
+Model review, 2026-10-24. Fixes go into the Onshape branch `3in-fixes` (from rev3) and reach the workspace when it is merged. On the branch every standard frame screw is steel class 12.9 with finish Black (the motor screws stay stainless and are not frame hardware; the imported collar screw is 10.9); the mate errors are the 3 that rev3 already had (Fastened 4, Revolute 24, Parallel 17). `hardware.csv` and `parts.csv` on the matching git branch follow the Onshape branch.
 
 | Item | Finding | Proposed | Branch `3in-fixes` |
 |---|---|---|---|
 | Arm and cross screws | M3x10 on a 1.5 mm washer: the tip reaches 1.9 mm into the 2.4 mm insert | M3x12 | done: ISO 7380 M3x12, mates kept |
-| Rule for screws into threads | no check today | length = everything under the head + full insert length + 0.5 to 1.5 mm | open |
+| Rule for screws into threads | no check today | length = everything under the head + full insert length + 0.5 to 2 mm, rounded up to a stocked length | open |
 | M2x10 | 8 of the 10 are prop screws mated to the props | exclude props, prop screws, motor screws and electronics from the BOM | open |
-| M3x6 | rev2 had one with no mate; in rev3 all 14 are mated | none | n/a |
+| M3x6 | the second xt30Mount screw had no mate (rev2 and rev3) | mate it | done: mated to the second xt30Mount hole |
 | McMaster flat head screws | 5 instances, part of the DJI O4 Pro reference subassembly, not frame hardware | keep; leave out of the BOM | n/a |
 | M3 inserts | 7 holes, 6 instances | add the 7th | done: 7th insert placed in the centre hole and mated |
 | Insert model | the insert holes are drawn as Ø4.5 + Ø5.5 x 1.0 counterbores; no insert part number yet | model the chosen insert and size the holes from it | Part Studio `Insert M3 (provisional)`: PEM KFS2-M3 values as variables, to replace with the measured sample |
@@ -67,7 +67,7 @@ Model review, 2026-10-24. Fixes go into the Onshape branch `3in-fixes` (from rev
 | Printed parts | Boot-L/R (2 each) become bootFL, bootFR, bootRL, bootRR; one camera mount becomes Cam-Mount-L and Cam-Mount-R; anti-slip pad added |
 | Hardware in CAD | rev1 had no screws in the assembly; rev2 has them. The arm screw choice on the 3" was still open on 2026-10-09 |
 
-Hardware per set, rev2, from the Onshape assembly. This list is the same as [`hardware.csv`](hardware.csv).
+Hardware per set, rev2, from the Onshape assembly (7 M3 inserts is the hole count; the rev2 assembly places 6). This is the rev2 list; [`hardware.csv`](hardware.csv) follows the Onshape branch `3in-fixes`.
 
 | Item | Standard | Qty |
 |---|---|---|

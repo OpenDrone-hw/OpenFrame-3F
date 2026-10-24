@@ -24,7 +24,7 @@ flowchart LR
 |---|---|
 | Source | [Onshape document OpenDrone-V2, workspace 3"](https://cad.onshape.com/documents/78e093d02798373a79bc68d0/w/0fcddf153f58a0417231386c) |
 | Link file | [`cad/onshape.json`](cad/onshape.json): document, workspace, element and part ids |
-| Released exports | `releases/<rev>/`, exported from a named Onshape version and never edited: [`rev1`](releases/rev1) (2026-07-05, first CNC samples) and [`rev2`](releases/rev2) (2026-10-20, handoff package rev F). The first production batch is cut from rev2 plus the unreleased changes in [`CHANGELOG.md`](CHANGELOG.md) |
+| Released exports | `releases/<rev>/`, exported from a named Onshape version and never edited: [`rev1`](releases/rev1) (2026-07-05, first CNC samples) and [`rev2`](releases/rev2) (2026-10-20, handoff package rev F). rev3 (handoff package rev G, quoted for the first production frame batch) is a named Onshape version; `releases/rev3/` is not exported yet |
 | Changes per revision | [`CHANGELOG.md`](CHANGELOG.md), with the hardware list of each revision |
 | Parts per set | [`parts.csv`](parts.csv) |
 | Fasteners and hardware | [`hardware.csv`](hardware.csv) |
@@ -32,17 +32,18 @@ flowchart LR
 
 ## A set
 
-rev2. 17 part types, 23 pieces, 8 of them carbon. Taken from the
-Onshape assembly (version `OpenFrame-3F rev2`, 2026-10-20). Materials are as set in the Onshape model and blank where
-the model sets none; the process column is not from the model. Carbon plate and side plate (Standoff-L/R)
-thicknesses are measured values.
+Follows the Onshape branch `3in-fixes` (from version `OpenFrame-3F rev3`), the
+same as [`parts.csv`](parts.csv) and [`hardware.csv`](hardware.csv) on this git
+branch. Materials are as set in the Onshape model and blank where the model
+sets none; the process column is not from the model. Carbon plate and side
+plate (Standoff-L/R) thicknesses are measured values.
 `Receiver/Antenna-Mount` is kept in the `frame` Part Studio but is not part of the set
 (`modelCheck.ignoreUnused` in `cad/onshape.json`), and so is `TopBumpr` until it is placed in the assembly.
-`BigBoot`, `Bumpr` and `xt30Mount` are in the assembly and not yet in `parts.csv`; the model check lists them.
+`BigBoot`, `Bumpr` and `xt30Mount` are in the assembly and not yet in `parts.csv`.
 
 | Part | Qty | Material | Thickness | Made by |
 |---|---|---|---|---|
-| 20mmx4mm | 4 | Aluminum |  | CNC aluminium |
+| Standoff M3 F-F 20 OD5 | 4 | Aluminum |  | bought (7075 round, M3 F-F) |
 | Airtag/Antenna-Mount | 1 | PLA |  | 3D print, TPU |
 | anti-slip pad | 1 |  |  | moulded silicone |
 | Arm | 4 | Carbon fiber epoxy (61%) | 4 mm | CNC carbon plate |
@@ -60,32 +61,31 @@ thicknesses are measured values.
 | Top | 1 | Carbon fiber epoxy (61%) | 2 mm | CNC carbon plate |
 | VTX-Mount | 1 | PLA |  | 3D print, TPU |
 
-Fasteners and hardware per set, from the same assembly:
+Fasteners and hardware per set:
 
-| Item | Qty |
-|---|---|
-| Hex nut grade A & B M2x0.4 | 4 |
-| Hex socket countersunk head screw M2x0.4 x 5 | 4 |
-| Hex socket head countersunk screw grade C M3x0.5 x 8 | 2 |
-| Button head screw with collar M3x6 (ISO 7380-2) | 1 |
-| m2 pressnut | 4 |
-| m3 pressnut | 7 |
-| Socket button head screw M2x0.4 x 10 | 10 |
-| Socket button head screw M2x0.4 x 22 | 4 |
-| Socket button head screw M3x0.5 x 10 | 5 |
-| Socket button head screw M3x0.5 x 6 | 14 |
-| Socket button head screw M3x0.5 x 8 | 2 |
-| softmount m2 | 8 |
-| Washer M3 | 5 |
+| Item | Standard | Qty |
+|---|---|---|
+| Socket button head screw M3x0.5 x 12 | ISO 7380-1 | 5 |
+| Socket button head screw M3x0.5 x 6 | ISO 7380-1 | 14 |
+| Socket button head screw M3x0.5 x 8 | ISO 7380-1 | 2 |
+| Hex socket countersunk head screw M3x0.5 x 8 | ISO 10642 | 2 |
+| Hexagon Socket Button Head Screw With Collar STN EN ISO 7380-2 - M3 x 6 Steel 10.9 Chrome v1 | ISO 7380-2 | 1 |
+| Hex socket head cap screw M2x0.40 x 20 x 16 | ISO 4762 | 4 |
+| Prevailing torque nut thin M2x0.40 | ISO 10511 | 4 |
+| Socket button head screw M2x0.4 x 10 | ISO 7380 (Onshape library; ISO 7380-1 starts at M3) | 10 |
+| Hex socket countersunk head screw M2x0.4 x 5 | ISO 10642 | 4 |
+| m2 pressnut |  | 4 |
+| m3 pressnut |  | 7 |
+| Grommet M2 |  | 8 |
+| Washer M3 |  | 5 |
 
-Motor screws (16 x M2x6) ship with the motors and are not frame hardware. The middle
-plate (Base-Top) has 7 M3 insert holes on the drawing; the assembly places 6 `m3 pressnut`
-instances, so `hardware.csv` lists 7 and the model check reports the difference.
+Motor screws (16 x M2x6) and prop screws (8 of the 10 M2x10) ship with the
+motors and props and are not frame hardware.
 
 ## Model checks
 
 Result of the Incutec Onshape model check, run on 2026-10-20 against the live
-workspace 3" in the Onshape document. A row stays until the model is fixed.
+workspace 3" in the Onshape document (rev2 state). A row stays until the model is fixed. The `m3 pressnut` row is fixed on the branch `3in-fixes` (7 instances).
 
 | Check | Finding |
 |---|---|
@@ -105,7 +105,7 @@ rev2, from the drawing in Onshape (`releases/rev2/drawings/Drawing-1.pdf`).
 | Cross | 4.0 mm |
 | Arm | 4.0 mm |
 | Side plates (Standoff-L/R) | 6.0 mm |
-| M3 bolt holes | Ø3 H8 (3.000-3.010) |
+| M3 bolt holes | Ø3; the Onshape drawing says H8 (3.000-3.010), the rev G spec says +0.03/0 (3.00-3.03) |
 | M2 bolt holes | Ø2.1 |
 | Insert holes, middle plate | Ø4.5 (M3), Ø3.5 (M2), reference only: sized to the insert used |
 | Countersinks, middle plate | Ø3 + 1.8 mm 45° (M3 countersunk) |
