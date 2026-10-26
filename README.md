@@ -26,7 +26,7 @@ are anodised Pantone 7549 C (gold).
 | Top / middle / bottom plate | 2.0 / 2.5 / 2.5 mm carbon |
 | Arms, cross | 4 mm carbon |
 | Camera side plates | 6 mm CNC aluminium |
-| Stack mount | 20 x 20 M2 (inserts), 25.5 x 25.5 (Ø2.1 through) |
+| Stack mount | 20 x 20 M2 (self-clinching nuts), 25.5 x 25.5 (Ø2.1 through) |
 | Motor mount | 9 x 9 and 12 x 12, M2 |
 | Standoffs | 20 mm, M3 female-female, OD 5 |
 | Weight | 80 g measured: carbon, aluminium and hardware, without the TPU parts |
@@ -105,6 +105,8 @@ flowchart TB
 |---|---|---|---|
 | anti-slip pad | pad | 1 |  |
 
+The released pad export (`releases/rev2.2/step/anti-slip-pad.step`) predates the current pad, rev B (founder decision 2026-10-26): one pad for both frames, 15.5 x 93.1 x 2.0 mm, black silicone 50 Shore A, logo debossed 0.5 mm, 3M adhesive back, compression moulded. The export is 15.5 x 77.1 x 2.5 mm (Onshape part `RIDD`); the 3" will use the same 93.1 mm pad as the 5", so the 3" model and export are to be updated.
+
 **3D printed TPU (preliminary)**
 
 | Part | Type | Qty | Thickness |
@@ -120,8 +122,9 @@ flowchart TB
 | VTX-Mount | air unit mount | 1 |  |
 | xt30Mount | XT30 mount | 1 |  |
 
-Threaded inserts (7 x M3 + 4 x M2) are pressed into the middle plate by the
-carbon supplier.
+Self-clinching nuts (304 stainless, 7 x M3-0 + 4 x M2-2.9) are pressed into the
+middle plate by the carbon supplier. The M3-0 nuts sit flush in a Ø6.7 x 1.55
+seat; the M2-2.9 nuts have no seat and their head stands 1.5 mm proud of the top face.
 
 ## Hardware kit
 
@@ -159,8 +162,8 @@ Hardware per set as counted in the Onshape assembly ([`bom.csv`](bom.csv), kind 
 | Prevailing torque nut thin M2x0.40 | ISO 10511 | M2 | 4 |
 | Socket button head screw M2x0.4 x 10 | ISO 7380 (Onshape library; ISO 7380-1 starts at M3) | M2x10 | 10 |
 | Hex socket countersunk head screw M2x0.4 x 5 | ISO 10642 | M2x5 | 4 |
-| m2 pressnut |  | M2 | 4 |
-| m3 pressnut |  | M3 | 7 |
+| m2 pressnut | self-clinching nut M2-2.9, 304 stainless | M2 | 4 |
+| m3 pressnut | self-clinching nut M3-0, 304 stainless | M3 | 7 |
 | Grommet M2 |  | M2 | 8 |
 | Washer M3 |  | M3 | 5 |
 
@@ -172,26 +175,28 @@ revision (see [`CHANGELOG.md`](CHANGELOG.md)).
 
 | Check | Result |
 |---|---|
-| Screws into inserts | arm and cross M3x10 end flush with the 2.4 mm insert, 1.35 mm under the ESC |
+| Screws into nuts | open. The check of 2026-10-24 (M3x10 flush with the insert top, 1.35 mm under the ESC) used the provisional 2.4 mm insert model, not the M3-0 nut (2.26 mm long). See "Open after rev2.2" in [`CHANGELOG.md`](CHANGELOG.md) |
 | Side plate screws | 3.5 to 4.5 mm of thread |
 | Stack | M2x18 with a thin nylon lock nut: 2.5 mm in the nut before the grommets are compressed; the grommets compress when tightened, so the tip reaches through the nylon ring |
 | Duplicates | none (the bumper M3x6 / M3x8 pair is the deliberate option) |
 
 ## Key dimensions
 
-From the drawing in Onshape and the rev G frame parts specification.
+From the drawing in Onshape and the rev2.2 frame parts specification (handoff package rev2.2, sent to the suppliers 2026-10-25). Where they differ, the specification governs.
 
 | | |
 |---|---|
-| M3 bolt holes | Ø3; the Onshape drawing says H8 (3.000-3.010), the rev G spec says +0.03/0 (3.00-3.03) |
+| M3 bolt holes | Ø3.00 to 3.10 (+0.10/0): as tight as possible for a standard bolt, never below the bolt diameter. The Onshape drawing still says H8 (3.000-3.010) |
 | M2 bolt holes | Ø2.1 |
-| Insert holes, middle plate | Ø4.5 (M3), Ø3.5 (M2), reference only: sized to the insert used |
+| Nut holes, middle plate | M3-0: Ø4.22 +0.08/0, seat Ø6.7 +0.10/0 x 1.55 +0.05/0 deep, head flush. M2-2.9: Ø4.22 +0.08/0, no seat, head 1.5 mm proud. Pressed in from the top face (the side without the countersinks) |
 | Countersinks, middle plate | Ø3 + 1.8 mm 45° (M3 countersunk) |
 | Bolt-head counterbore, bottom plate | Ø4.1 (M2 button head) |
 
 Chamfers 0.5 mm 45°, outer fillets R1.0 mm, inner fillets R1.05 mm unless the
-drawing says otherwise. The cross-to-arm fit is the tightest tolerance in the design:
-0.000-0.100 mm between both parts on the drawing.
+drawing says otherwise. The cross-to-arm fit is a press fit with no visible play:
+the mating edges are machined to the CAD (gap 0.025 mm arm to cross, 0.05 mm arm to arm)
+and the production fit is agreed on the samples (spec 4.2). The Onshape drawing
+still gives 0.000-0.100 mm.
 
 ## Licence
 
