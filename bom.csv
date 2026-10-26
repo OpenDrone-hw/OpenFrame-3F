@@ -18,15 +18,15 @@ Cam-Mount-L,part,printed,1,PLA,,,,"3D print, TPU",,R/CD,camera soft mount
 Cam-Mount-R,part,printed,1,PLA,,,,"3D print, TPU",,RDDD,camera soft mount
 VTX-Mount,part,printed,1,PLA,,,,"3D print, TPU",,REBH,air unit mount
 xt30Mount,part,printed,1,,,,,"3D print, TPU",,ROFD,XT30 mount
-Socket button head screw M3x0.5 x 10,hardware,fastener,5,,,ISO 7380-1,M3x10,bought,,,"4 arms + cross into the M3 inserts, on a washer; tip flush with the insert top. Steel class 12.9, black. Nylon patch"
+Socket button head screw M3x0.5 x 10,hardware,fastener,5,,,ISO 7380-1,M3x10,bought,,,"4 arms + cross into the M3-0 nuts, on a washer; tip position against the nut open (CHANGELOG, Open after rev2.2). Steel class 12.9, black. Nylon patch"
 Socket button head screw M3x0.5 x 6,hardware,fastener,14,,,ISO 7380-1,M3x6,bought,,,"8 camera side plates (the 2 at the bumper are the no-bumper option), 4 standoff ends, 2 xt30Mount into the standoffs. Steel class 12.9, black. Nylon patch"
 Socket button head screw M3x0.5 x 8,hardware,fastener,4,,,ISO 7380-1,M3x8,bought,,,"2 Airtag/Antenna-Mount (TPU), 2 bumper option (through Bumpr). Steel class 12.9, black. No patch"
 Hex socket countersunk head screw M3x0.5 x 8,hardware,fastener,2,,,ISO 10642,M3x8,bought,,,"front standoff bottoms through the middle plate. Steel class 12.9, black. No patch"
-Hex socket head cap screw M2x0.40 x 18,hardware,fastener,4,,,ISO 4762,M2x18,bought,,,"stack through the M2 inserts, nylon lock nut on top. Length kept: the grommets compress when the stack is tightened (founder 2026-10-24). Steel class 12.9, black. No patch"
+Hex socket head cap screw M2x0.40 x 18,hardware,fastener,4,,,ISO 4762,M2x18,bought,,,"stack through the M2 nuts, nylon lock nut on top. Length kept: the grommets compress when the stack is tightened (founder 2026-10-24). Steel class 12.9, black. No patch"
 Prevailing torque nut thin M2x0.40,hardware,fastener,4,,,ISO 10511,M2,bought,,,"stack, on top of the grommets. Nylon insert"
 Socket button head screw M2x0.4 x 10,hardware,fastener,10,,,ISO 7380 (Onshape library; ISO 7380-1 starts at M3),M2x10,bought,,,"2 camera pivots (Cam-Mount-L/R); the other 8 are prop screws mated to the props, not frame hardware. Steel class 12.9, black"
 Hex socket countersunk head screw M2x0.4 x 5,hardware,fastener,4,,,ISO 10642,M2x5,bought,,,"air unit into VTX-Mount (TPU). Steel class 12.9, black. No patch"
-m2 pressnut,hardware,insert,4,,,,M2,bought,,,"threaded insert, middle plate, pressed in by the carbon supplier"
-m3 pressnut,hardware,insert,7,,,,M3,bought,,,"threaded insert, middle plate, pressed in by the carbon supplier"
+m2 pressnut,hardware,insert,4,Stainless steel 304,,,M2-2.9,bought,,,"self-clinching nut M2-2.9, middle plate, no seat, head 1.5 mm proud, pressed in by the carbon supplier"
+m3 pressnut,hardware,insert,7,Stainless steel 304,,,M3-0,bought,,,"self-clinching nut M3-0, middle plate, flush in a Ø6.7 x 1.55 seat, pressed in by the carbon supplier"
 Grommet M2,hardware,grommet,8,,,,M2,bought,,,stack soft mount
 Washer M3,hardware,fastener,5,,,,M3,bought,,,"under the arm and cross screws; A2 stainless in the model, spec open"
