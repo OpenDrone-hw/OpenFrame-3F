@@ -72,7 +72,7 @@ flowchart TB
   SET["OpenFrame-3F set"] --> CF["CNC carbon"]
   SET --> AL["CNC aluminium side plates"]
   SET --> TPU["TPU parts, preliminary"]
-  SET --> KIT["Hardware kit"]
+  SET --> KIT["Hardware bag"]
   SET --> PAD["Anti-slip pad"]
 ```
 
@@ -126,15 +126,15 @@ Self-clinching nuts (304 stainless, 7 x M3-0 + 4 x M2-2.9) are pressed into the
 middle plate by the carbon supplier. The M3-0 nuts sit flush in a Ø6.7 x 1.55
 seat; the M2-2.9 nuts have no seat and their head stands 1.5 mm proud of the top face.
 
-## Hardware kit
+## Hardware bag
 
-<img src="images/kit.png" width="860" alt="OpenFrame-3F kit laid out, render: letters are frame and printed parts, numbers the hardware kit" />
+<img src="images/kit.png" width="860" alt="OpenFrame-3F hardware laid out, render: letters are frame and printed parts, numbers the hardware bag" />
 
 One bag per frame: every screw and nut kind of the frame plus 2 spares
 (49 screws in 7 kinds). Every screw is black-oxide alloy steel, class 12.9.
 The bumper holes get an M3x6 without the bumper and an M3x8 with it; both ship.
 
-| IPN | Item | Nylon patch | In the frame | In the kit | Where |
+| IPN | Item | Nylon patch | In the frame | In the bag | Where |
 |---|---|---|---|---|---|
 | `FAS-M3X10-BH-NP` | ISO 7380-1 M3x10 | yes | 5 | 7 | arms + cross, on a washer |
 | `FAS-M3X6-BH-NP` | ISO 7380-1 M3x6 | yes | 14 | 16 | camera side plates, standoff ends, XT30 mount |
